@@ -1,24 +1,25 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
 import {
   ArrowLeft,
   Check,
   Tag,
-  MessageCircle,
   Globe,
   Code2,
   Monitor,
   Smartphone,
   Tablet,
+  Loader2,
+  ChevronDown,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { ReferenceCard } from "@/components/ReferenceCard";
 import {
   getReferenceById,
   getReferencesByCategory,
@@ -35,12 +36,53 @@ const ReferenceDetailPage = () => {
     reference?.url ? "url" : "html",
   );
 
-  // Get related references (same category, excluding current)
-  const relatedReferences: Reference[] = reference
-    ? getReferencesByCategory(reference.categoryId)
-        .filter((ref) => ref.id !== reference.id)
-        .slice(0, 4)
+  // Get all related references (same category, excluding current)
+  const allRelatedReferences: Reference[] = reference
+    ? getReferencesByCategory(reference.categoryId).filter(
+        (ref) => ref.id !== reference.id,
+      )
     : [];
+
+  // Infinite scroll state
+  const [displayedCount, setDisplayedCount] = useState(8);
+  const [loading, setLoading] = useState(false);
+  const ITEMS_PER_PAGE = 8;
+
+  // Calculate displayed references based on displayedCount
+  const displayedReferences = allRelatedReferences.slice(0, displayedCount);
+  const hasMore = displayedCount < allRelatedReferences.length;
+
+  // Load more references
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const loadMore = () => {
+    if (loading) return;
+    if (!hasMore) return;
+
+    setLoading(true);
+
+    // Simulate delay for smooth UX
+    setTimeout(() => {
+      setDisplayedCount((prev) => prev + ITEMS_PER_PAGE);
+      setLoading(false);
+    }, 300);
+  };
+
+  // Scroll event listener
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+
+      // Trigger when user is 500px from bottom
+      if (scrollTop + windowHeight >= documentHeight - 500) {
+        loadMore();
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [loading, hasMore, loadMore]);
 
   if (!reference) {
     return (
@@ -322,8 +364,8 @@ const ReferenceDetailPage = () => {
           </section>
         )}
 
-        {/* Related References Section */}
-        {relatedReferences.length > 0 && (
+        {/* Related References Section - Vertical Scroll with Infinite Loading */}
+        {allRelatedReferences.length > 0 && (
           <section className="py-12">
             <div className="container">
               <div className="flex items-center justify-between mb-8">
@@ -332,7 +374,8 @@ const ReferenceDetailPage = () => {
                     Referensi Terkait
                   </h2>
                   <p className="text-muted-foreground">
-                    Lihat juga referensi lainnya di kategori yang sama
+                    Lihat juga referensi lainnya ({allRelatedReferences.length}{" "}
+                    tersedia)
                   </p>
                 </div>
                 <Link to="/reference">
@@ -343,42 +386,41 @@ const ReferenceDetailPage = () => {
                 </Link>
               </div>
 
+              {/* Vertical Grid */}
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                {relatedReferences.map((related) => (
-                  <Link key={related.id} to={`/reference/${related.id}`}>
-                    <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 group h-full border-0 bg-background shadow-md">
-                      <div className="relative aspect-video overflow-hidden rounded-t-xl bg-muted">
-                        <img
-                          src={related.image}
-                          alt={related.title}
-                          className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
-                        <div className="absolute bottom-3 left-3 right-3">
-                          <Badge
-                            variant="secondary"
-                            className="text-xs bg-white/90 text-foreground backdrop-blur-sm"
-                          >
-                            {related.category}
-                          </Badge>
-                        </div>
-                      </div>
-                      <CardContent className="p-4">
-                        <h3 className="font-bold text-foreground line-clamp-1 group-hover:text-primary transition-colors text-lg">
-                          {related.title}
-                        </h3>
-                        <p className="text-sm text-muted-foreground mt-2 line-clamp-2 leading-relaxed">
-                          {related.description}
-                        </p>
-                        <div className="mt-4 flex items-center text-sm text-primary font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                          Lihat Detail
-                          <ArrowLeft className="ml-1 h-4 w-4 rotate-180" />
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </Link>
+                {displayedReferences.map((related) => (
+                  <ReferenceCard key={related.id} reference={related} />
                 ))}
               </div>
+
+              {/* Infinite Scroll Loading Indicator */}
+              <div className="flex flex-col justify-center items-center py-8 mt-4">
+                {loading && (
+                  <div className="flex items-center gap-2 text-muted-foreground">
+                    <Loader2 className="h-5 w-5 animate-spin" />
+                    <span>Memuat lebih banyak...</span>
+                  </div>
+                )}
+                {!hasMore && displayedReferences.length > 0 && (
+                  <div className="flex items-center gap-2 text-muted-foreground text-sm">
+                    <ChevronDown className="h-4 w-4" />
+                    <span>Semua referensi telah ditampilkan</span>
+                  </div>
+                )}
+                {displayedReferences.length === 0 && !loading && (
+                  <p className="text-muted-foreground text-sm">
+                    Tidak ada referensi terkait
+                  </p>
+                )}
+              </div>
+
+              {/* Scroll hint */}
+              {hasMore && (
+                <div className="flex justify-center items-center gap-2 text-muted-foreground text-sm animate-pulse">
+                  <ChevronDown className="h-4 w-4" />
+                  <span>Scroll untuk memuat lebih banyak</span>
+                </div>
+              )}
             </div>
           </section>
         )}
