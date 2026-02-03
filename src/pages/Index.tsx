@@ -8,6 +8,7 @@ import { CategoryPackagesSection } from "@/components/sections/CategoryPackagesS
 import { ReferencesPreviewSection } from "@/components/sections/ReferencesPreviewSection";
 import { WhyUsSection } from "@/components/sections/WhyUsSection";
 import { CTASection } from "@/components/sections/CTASection";
+import { AddonPackagesSection } from "@/components/sections/AddonPackagesSection";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
         <ServicesSection />
         <SimplePackagesSection />
         <CategoryPackagesSection />
+        <AddonPackagesSection />
         <ReferencesPreviewSection />
         <WhyUsSection />
         <CTASection />
