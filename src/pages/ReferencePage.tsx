@@ -7,11 +7,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { ReferenceCard } from "@/components/ReferenceCard";
-import {
-  references,
-  categories,
-  getReferencesByCategory,
-} from "@/lib/data/references";
+import { categories, getReferencesByCategory } from "@/lib/data/references";
 
 const ReferencePage = () => {
   const [activeCategory, setActiveCategory] = useState("all");
