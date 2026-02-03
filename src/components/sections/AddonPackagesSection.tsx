@@ -59,12 +59,12 @@ const addonPackages = [
     icon: Server,
     title: "Perpanjangan Hosting",
     description: "Perpanjangan hosting dengan harga terjangkau",
-    price: "Mulai Rp 50rb",
+    price: "Mulai Rp 25rb",
     options: [
-      { name: "Hosting 1 Bulan", price: "Rp 50rb" },
-      { name: "Hosting 3 Bulan", price: "Rp 135rb" },
-      { name: "Hosting 6 Bulan", price: "Rp 250rb" },
-      { name: "Hosting 12 Bulan", price: "Rp 450rb" },
+      { name: "Hosting 1 Bulan", price: "Rp 25rb" },
+      { name: "Hosting 3 Bulan", price: "Rp 75rb" },
+      { name: "Hosting 6 Bulan", price: "Rp 150rb" },
+      { name: "Hosting 12 Bulan", price: "Rp 300rb" },
     ],
     waMessage:
       "Halo RijalsDev, saya ingin perpanjangan hosting. Mohon informasi paket yang tersedia.",
@@ -73,31 +73,31 @@ const addonPackages = [
     icon: Tag,
     title: "Bundling Domain + Hosting",
     description: "Paket lengkap domain dan hosting untuk website aktif",
-    price: "Mulai Rp 250rb",
+    price: "Mulai Rp 225rb",
     accordion: true,
     accordionData: [
       {
         period: "Domain Baru (.com/.id) - 1 tahun",
         items: [
           { name: "Hosting 3 Bulan + SSL", price: "Rp 300rb" },
-          { name: "Hosting 6 Bulan + SSL", price: "Rp 400rb" },
-          { name: "Hosting 12 Bulan + SSL", price: "Rp 550rb" },
+          { name: "Hosting 6 Bulan + SSL", price: "Rp 375rb" },
+          { name: "Hosting 12 Bulan + SSL", price: "Rp 525rb" },
         ],
       },
       {
         period: "Custom Domain Baru - 1 tahun",
         items: [
           { name: "Hosting 3 Bulan + SSL", price: "Rp 500rb" },
-          { name: "Hosting 6 Bulan + SSL", price: "Rp 650rb" },
-          { name: "Hosting 12 Bulan + SSL", price: "Rp 850rb" },
+          { name: "Hosting 6 Bulan + SSL", price: "Rp 575rb" },
+          { name: "Hosting 12 Bulan + SSL", price: "Rp 725rb" },
         ],
       },
       {
         period: "Perpanjangan Domain - 1 tahun",
         items: [
           { name: "Hosting 3 Bulan + SSL", price: "Rp 250rb" },
-          { name: "Hosting 6 Bulan + SSL", price: "Rp 350rb" },
-          { name: "Hosting 12 Bulan + SSL", price: "Rp 550rb" },
+          { name: "Hosting 6 Bulan + SSL", price: "Rp 325rb" },
+          { name: "Hosting 12 Bulan + SSL", price: "Rp 475rb" },
         ],
       },
     ],
