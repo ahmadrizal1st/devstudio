@@ -78,32 +78,32 @@ const services = [
 
 export const ServicesSection = () => {
   return (
-    <section id="layanan" className="py-20 bg-background">
-      <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
+    <section id="layanan" className="py-12 sm:py-16 lg:py-20 bg-background">
+      <div className="container px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
             Layanan <span className="text-primary">Kami</span>
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="mt-3 sm:mt-4 text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
             Berbagai pilihan website sesuai kebutuhan bisnis Anda, dari yang
             sederhana hingga kompleks
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {services.map((service, index) => (
             <Card
               key={index}
-              className="group transition-all duration-300 hover:shadow-lg hover:border-primary/50 hover:-translate-y-1"
+              className="group h-full transition-all duration-300 hover:shadow-lg hover:border-primary/50 hover:-translate-y-1 flex flex-col"
             >
-              <CardContent className="p-6">
-                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  <service.icon className="h-6 w-6" />
+              <CardContent className="p-4 sm:p-6 flex-1 flex flex-col">
+                <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors shrink-0">
+                  <service.icon className="h-5 w-5" />
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-foreground">
+                <h3 className="mb-2 text-lg font-semibold text-foreground">
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-sm text-muted-foreground mb-3 flex-1">
                   {service.description}
                 </p>
                 <p className="text-sm font-medium text-primary">

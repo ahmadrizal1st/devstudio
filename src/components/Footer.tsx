@@ -10,10 +10,17 @@ export const Footer = () => {
       <div className="container py-12">
         <div className="grid gap-8 md:grid-cols-3">
           {/* Brand */}
-          <div>
-            <h3 className="mb-4 text-2xl font-bold">
-              Rijals<span className="text-primary">Dev</span>
-            </h3>
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+            <div className="flex items-center gap-3 mb-4">
+              <img
+                src="/logo.png"
+                alt="RijalsDev Logo"
+                className="h-10 w-auto"
+              />
+              <h3 className="text-2xl font-bold">
+                Rijals<span className="text-primary">Dev</span>
+              </h3>
+            </div>
             <p className="text-primary-foreground/80">
               Jasa pembuatan website profesional dengan harga terjangkau untuk
               bisnis Anda.
@@ -21,7 +28,7 @@ export const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <h4 className="mb-4 text-lg font-semibold">Link Cepat</h4>
             <ul className="space-y-2">
               <li>
@@ -55,7 +62,7 @@ export const Footer = () => {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <h4 className="mb-4 text-lg font-semibold">Kontak</h4>
             <ul className="space-y-3">
               <li>

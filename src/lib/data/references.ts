@@ -27,7 +27,7 @@ export const references: Reference[] = [
       "Form konsultasi",
       "WhatsApp floating",
     ],
-    image: "/placeholder.svg",
+    image: "/logo.png",
     suggestedPackage: "Landing Page Business",
     websiteHtml: `<!DOCTYPE html>
 <html lang="id">

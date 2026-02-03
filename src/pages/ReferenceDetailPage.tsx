@@ -36,6 +36,22 @@ const ReferenceDetailPage = () => {
     reference?.url ? "url" : "html",
   );
 
+  // Screen size detection for preview buttons
+  const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      setIsMobile(width < 768);
+      setIsTablet(width >= 768 && width < 1024);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   // Get all related references (same category, excluding current)
   const allRelatedReferences: Reference[] = reference
     ? getReferencesByCategory(reference.categoryId).filter(
@@ -223,6 +239,7 @@ const ReferenceDetailPage = () => {
                     size="sm"
                     onClick={() => setPreviewMode("desktop")}
                     className="gap-2"
+                    disabled={isTablet || isMobile}
                   >
                     <Monitor className="h-4 w-4" />
                     Desktop
@@ -232,6 +249,7 @@ const ReferenceDetailPage = () => {
                     size="sm"
                     onClick={() => setPreviewMode("tablet")}
                     className="gap-2"
+                    disabled={isMobile}
                   >
                     <Tablet className="h-4 w-4" />
                     Tablet
@@ -279,9 +297,9 @@ const ReferenceDetailPage = () => {
                 <div
                   className={`transition-all duration-300 ${
                     previewMode === "mobile"
-                      ? "w-[375px]"
+                      ? "w-full max-w-[375px]"
                       : previewMode === "tablet"
-                        ? "w-[768px]"
+                        ? "w-full max-w-[768px]"
                         : "w-full max-w-6xl"
                   }`}
                 >
