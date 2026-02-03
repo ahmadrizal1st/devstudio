@@ -74,6 +74,7 @@ export const simplePackages: Package[] = [
       "Request Fitur Khusus (Popup, Accordion, Pricing Table, dll)",
       "Desain Interaktif (Animated Scroll, Parallax, dll)",
       "Speed Optimization (Lazy Load + Caching Tools)",
+      "3 Email Bisnis",
       "5x Revisi Gratis",
       "Garansi Maintenance 1,5 Bulan",
     ],
@@ -91,7 +92,7 @@ export const packageCategories: PackageCategory[] = [
       {
         id: "landing-starter",
         name: "Starter",
-        priceRange: "Rp 800.000 – Rp 1.200.000",
+        priceRange: "Rp 800.000",
         priceMin: 800000,
         description: "Landing page sederhana dan efektif",
         features: [
@@ -104,7 +105,8 @@ export const packageCategories: PackageCategory[] = [
           "Gratis subdomain",
           "Gratis hosting 3 bulan",
           "Disk storage 1 GB",
-          "Gratis SSL (https)",
+          "Gratis SSL",
+          "1 Email Bisnis",
           "Free revisi 1x",
           "Garansi maintenance 7 hari",
           "Video panduan akses website",
@@ -113,7 +115,7 @@ export const packageCategories: PackageCategory[] = [
       {
         id: "landing-business",
         name: "Business",
-        priceRange: "Rp 1.300.000 – Rp 1.900.000",
+        priceRange: "Rp 1.300.000",
         priceMin: 1300000,
         description: "Landing page dengan desain lebih menarik",
         popular: true,
@@ -129,7 +131,7 @@ export const packageCategories: PackageCategory[] = [
           "Gratis hosting 6 bulan",
           "Disk storage 5 GB",
           "Gratis SSL",
-          "Email bisnis 1",
+          "2 Email Bisnis",
           "Free revisi 3x",
           "Garansi maintenance 14 hari",
           "Video panduan akses website",
@@ -138,7 +140,7 @@ export const packageCategories: PackageCategory[] = [
       {
         id: "landing-pro",
         name: "Pro",
-        priceRange: "Rp 2.000.000 – Rp 2.700.000",
+        priceRange: "Rp 2.000.000",
         priceMin: 2000000,
         description: "Landing page fokus konversi maksimal",
         features: [
@@ -153,7 +155,7 @@ export const packageCategories: PackageCategory[] = [
           "Gratis hosting 12 bulan",
           "Disk storage 10 GB",
           "Gratis SSL",
-          "Email bisnis max 5",
+          "3 Email Bisnis",
           "SEO on-page basic",
           "Speed optimization basic",
           "Free revisi 5x",
@@ -172,7 +174,7 @@ export const packageCategories: PackageCategory[] = [
       {
         id: "company-starter",
         name: "Starter",
-        priceRange: "Rp 1.700.000 – Rp 2.500.000",
+        priceRange: "Rp 1.700.000",
         priceMin: 1700000,
         description: "Profil perusahaan standar",
         features: [
@@ -187,7 +189,7 @@ export const packageCategories: PackageCategory[] = [
           "Gratis hosting 6 bulan",
           "Disk storage 5 GB",
           "Gratis SSL",
-          "Email bisnis 2",
+          "1 Email Bisnis",
           "Free revisi 2x",
           "Garansi maintenance 14 hari",
           "Video panduan akses website",
@@ -196,7 +198,7 @@ export const packageCategories: PackageCategory[] = [
       {
         id: "company-business",
         name: "Business",
-        priceRange: "Rp 2.800.000 – Rp 4.000.000",
+        priceRange: "Rp 2.800.000",
         priceMin: 2800000,
         description: "Company profile dengan fitur lengkap",
         popular: true,
@@ -212,7 +214,7 @@ export const packageCategories: PackageCategory[] = [
           "Gratis hosting 12 bulan",
           "Disk storage 10 GB",
           "Gratis SSL",
-          "Email bisnis 3",
+          "2 Email Bisnis",
           "SEO on-page basic",
           "Free revisi 3x",
           "Garansi maintenance 1 bulan",
@@ -222,7 +224,7 @@ export const packageCategories: PackageCategory[] = [
       {
         id: "company-pro",
         name: "Pro",
-        priceRange: "Rp 4.500.000 – Rp 6.000.000",
+        priceRange: "Rp 4.500.000",
         priceMin: 4500000,
         description: "Company profile premium dengan storytelling",
         features: [
@@ -237,7 +239,7 @@ export const packageCategories: PackageCategory[] = [
           "Gratis hosting 12 bulan",
           "Disk storage 15 GB",
           "Gratis SSL",
-          "Email bisnis max 5",
+          "3 Email Bisnis",
           "SEO on-page basic",
           "Speed optimization",
           "Free revisi 5x",
@@ -256,7 +258,7 @@ export const packageCategories: PackageCategory[] = [
       {
         id: "umkm-starter",
         name: "Starter",
-        priceRange: "Rp 2.500.000 – Rp 3.500.000",
+        priceRange: "Rp 2.500.000",
         priceMin: 2500000,
         description: "Website UMKM dengan katalog produk",
         features: [
@@ -270,7 +272,7 @@ export const packageCategories: PackageCategory[] = [
           "Gratis hosting 6 bulan",
           "Disk storage 5 GB",
           "Gratis SSL",
-          "Email bisnis 3",
+          "1 Email Bisnis",
           "Free revisi 2x",
           "Garansi maintenance 14 hari",
           "Video panduan akses website",
@@ -279,7 +281,7 @@ export const packageCategories: PackageCategory[] = [
       {
         id: "umkm-business",
         name: "Business",
-        priceRange: "Rp 3.800.000 – Rp 5.200.000",
+        priceRange: "Rp 3.800.000",
         priceMin: 3800000,
         description: "Website bisnis dengan admin panel",
         popular: true,
@@ -295,7 +297,7 @@ export const packageCategories: PackageCategory[] = [
           "Gratis hosting 12 bulan",
           "Disk storage 10 GB",
           "Gratis SSL",
-          "Email bisnis 4",
+          "2 Email Bisnis",
           "SEO on-page basic",
           "Free revisi 3x",
           "Garansi maintenance 1 bulan",
@@ -305,7 +307,7 @@ export const packageCategories: PackageCategory[] = [
       {
         id: "umkm-pro",
         name: "Pro",
-        priceRange: "Rp 5.500.000 – Rp 7.000.000",
+        priceRange: "Rp 5.500.000",
         priceMin: 5500000,
         description: "Website bisnis lengkap dengan fitur premium",
         features: [
@@ -320,7 +322,7 @@ export const packageCategories: PackageCategory[] = [
           "Gratis hosting 12 bulan",
           "Disk storage 15 GB",
           "Gratis SSL",
-          "Email bisnis max 5",
+          "3 Email Bisnis",
           "SEO on-page basic",
           "Speed optimization",
           "Free revisi 5x",
@@ -339,7 +341,7 @@ export const packageCategories: PackageCategory[] = [
       {
         id: "toko-starter",
         name: "Starter",
-        priceRange: "Rp 4.000.000 – Rp 5.500.000",
+        priceRange: "Rp 4.000.000",
         priceMin: 4000000,
         description: "Toko online sederhana",
         features: [
@@ -354,6 +356,7 @@ export const packageCategories: PackageCategory[] = [
           "Gratis hosting 12 bulan",
           "Disk storage 10 GB",
           "Gratis SSL",
+          "1 Email Bisnis",
           "Free revisi 2x",
           "Garansi maintenance 1 bulan",
           "Video panduan akses website",
@@ -362,7 +365,7 @@ export const packageCategories: PackageCategory[] = [
       {
         id: "toko-business",
         name: "Business",
-        priceRange: "Rp 5.800.000 – Rp 7.500.000",
+        priceRange: "Rp 5.800.000",
         priceMin: 5800000,
         description: "Toko online dengan manajemen pesanan",
         popular: true,
@@ -378,7 +381,7 @@ export const packageCategories: PackageCategory[] = [
           "Gratis hosting 12 bulan",
           "Disk storage 15 GB",
           "Gratis SSL",
-          "Email bisnis 4",
+          "2 Email Bisnis",
           "Free revisi 3x",
           "Garansi maintenance 2 bulan",
           "Video panduan akses website",
@@ -387,7 +390,7 @@ export const packageCategories: PackageCategory[] = [
       {
         id: "toko-pro",
         name: "Pro",
-        priceRange: "Rp 8.000.000 – Rp 10.000.000",
+        priceRange: "Rp 8.000.000",
         priceMin: 8000000,
         description: "Toko online premium dengan stok management",
         features: [
@@ -401,7 +404,7 @@ export const packageCategories: PackageCategory[] = [
           "Gratis hosting 12 bulan",
           "Disk storage 20 GB",
           "Gratis SSL",
-          "Email bisnis max 5",
+          "3 Email Bisnis",
           "Speed optimization",
           "Free revisi 5x",
           "Garansi maintenance 3 bulan",
@@ -419,7 +422,7 @@ export const packageCategories: PackageCategory[] = [
       {
         id: "custom-starter",
         name: "Starter",
-        priceRange: "Rp 6.000.000 – Rp 8.500.000",
+        priceRange: "Rp 6.000.000",
         priceMin: 6000000,
         description: "Sistem web sederhana",
         features: [
@@ -433,6 +436,7 @@ export const packageCategories: PackageCategory[] = [
           "Gratis hosting 6 bulan",
           "Disk storage 10 GB",
           "Gratis SSL",
+          "1 Email Bisnis",
           "Free revisi 2x",
           "Garansi maintenance 14 hari",
           "Video panduan penggunaan sistem",
@@ -441,7 +445,7 @@ export const packageCategories: PackageCategory[] = [
       {
         id: "custom-business",
         name: "Business",
-        priceRange: "Rp 9.000.000 – Rp 13.000.000",
+        priceRange: "Rp 9.000.000",
         priceMin: 9000000,
         description: "Sistem multi-user dengan dashboard",
         popular: true,
@@ -455,6 +459,7 @@ export const packageCategories: PackageCategory[] = [
           "Gratis hosting 12 bulan",
           "Disk storage 15 GB",
           "Gratis SSL",
+          "2 Email Bisnis",
           "Free revisi 3x",
           "Garansi maintenance 1 bulan",
           "Video panduan penggunaan sistem",
@@ -463,7 +468,7 @@ export const packageCategories: PackageCategory[] = [
       {
         id: "custom-pro",
         name: "Pro",
-        priceRange: "Rp 14.000.000 – Rp 20.000.000",
+        priceRange: "Rp 14.000.000",
         priceMin: 14000000,
         description: "Sistem enterprise dengan fitur lengkap",
         features: [
@@ -476,7 +481,7 @@ export const packageCategories: PackageCategory[] = [
           "Gratis hosting 12 bulan",
           "Disk storage 20 GB",
           "Gratis SSL",
-          "Email bisnis max 5",
+          "3 Email Bisnis",
           "Speed optimization",
           "Free revisi 5x",
           "Garansi maintenance 2 bulan",
