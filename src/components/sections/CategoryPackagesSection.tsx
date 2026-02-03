@@ -1,5 +1,13 @@
 import { useState } from "react";
-import { Layout, Building2, Store, ShoppingCart, Settings } from "lucide-react";
+import {
+  Layout,
+  Building2,
+  Store,
+  ShoppingCart,
+  Settings,
+  TrendingUp,
+  MapPin,
+} from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { packageCategories } from "@/lib/data/packages";
 import { PackageCard } from "@/components/PackageCard";
@@ -9,6 +17,8 @@ const categoryIcons: Record<string, React.ElementType> = {
   "company-profile": Building2,
   "umkm-bisnis": Store,
   "toko-online": ShoppingCart,
+  "tour-travel": MapPin,
+  "seo-optimization": TrendingUp,
   "custom-system": Settings,
 };
 
@@ -23,7 +33,8 @@ export const CategoryPackagesSection = () => {
             Paket <span className="text-primary">Berdasarkan Kategori</span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Detail lengkap paket untuk setiap jenis website. Pilih yang paling sesuai dengan kebutuhan bisnis Anda.
+            Detail lengkap paket untuk setiap jenis website. Pilih yang paling
+            sesuai dengan kebutuhan bisnis Anda.
           </p>
         </div>
 
@@ -32,14 +43,14 @@ export const CategoryPackagesSection = () => {
           onValueChange={setActiveCategory}
           className="w-full"
         >
-          <TabsList className="flex flex-wrap h-auto gap-2 bg-transparent justify-center mb-8">
+          <TabsList className="flex h-auto gap-2 bg-transparent justify-center mb-8 overflow-x-auto pb-2 scrollbar-hide max-w-full">
             {packageCategories.map((category) => {
               const Icon = categoryIcons[category.id];
               return (
                 <TabsTrigger
                   key={category.id}
                   value={category.id}
-                  className="flex items-center gap-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground px-4 py-2 rounded-lg border"
+                  className="flex-shrink-0 flex items-center gap-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground px-4 py-2 rounded-lg border whitespace-nowrap"
                 >
                   {Icon && <Icon className="h-4 w-4" />}
                   <span className="hidden sm:inline">{category.name}</span>
