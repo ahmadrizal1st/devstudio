@@ -8,9 +8,9 @@ export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "#layanan", label: "Layanan" },
-    { href: "#paket", label: "Paket" },
-    { href: "#kenapa-kami", label: "Kenapa Kami" },
+    { href: "/#layanan", label: "Layanan" },
+    { href: "/#paket", label: "Paket" },
+    { href: "/#kenapa-kami", label: "Kenapa Kami" },
     { href: "/reference", label: "Referensi", isRoute: true },
   ];
 
@@ -31,6 +31,7 @@ export const Navbar = () => {
               <Link
                 key={link.href}
                 to={link.href}
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               >
                 {link.label}
@@ -43,7 +44,7 @@ export const Navbar = () => {
               >
                 {link.label}
               </a>
-            )
+            ),
           )}
           <WhatsAppButton size="sm">Konsultasi</WhatsAppButton>
         </nav>
@@ -55,7 +56,11 @@ export const Navbar = () => {
           className="md:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          {isMenuOpen ? (
+            <X className="h-5 w-5" />
+          ) : (
+            <Menu className="h-5 w-5" />
+          )}
         </Button>
       </div>
 
@@ -69,7 +74,10 @@ export const Navbar = () => {
                   key={link.href}
                   to={link.href}
                   className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
                 >
                   {link.label}
                 </Link>
@@ -82,7 +90,7 @@ export const Navbar = () => {
                 >
                   {link.label}
                 </a>
-              )
+              ),
             )}
             <WhatsAppButton size="sm" className="w-full">
               Konsultasi Gratis

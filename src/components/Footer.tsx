@@ -15,7 +15,8 @@ export const Footer = () => {
               Rijals<span className="text-primary">Dev</span>
             </h3>
             <p className="text-primary-foreground/80">
-              Jasa pembuatan website profesional dengan harga terjangkau untuk bisnis Anda.
+              Jasa pembuatan website profesional dengan harga terjangkau untuk
+              bisnis Anda.
             </p>
           </div>
 
@@ -24,17 +25,29 @@ export const Footer = () => {
             <h4 className="mb-4 text-lg font-semibold">Link Cepat</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#layanan" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <a
+                  href="/#layanan"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
                   Layanan
                 </a>
               </li>
               <li>
-                <a href="#paket" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <a
+                  href="/#paket"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
                   Paket Harga
                 </a>
               </li>
               <li>
-                <Link to="/reference" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <Link
+                  to="/reference"
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
                   Referensi
                 </Link>
               </li>
