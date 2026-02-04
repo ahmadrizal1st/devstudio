@@ -1,27 +1,30 @@
-import { 
-  Shield, 
-  Clock, 
-  HeadphonesIcon, 
-  Palette, 
-  Zap, 
-  CreditCard 
+import {
+  Shield,
+  Clock,
+  HeadphonesIcon,
+  Palette,
+  Zap,
+  CreditCard,
 } from "lucide-react";
 
 const reasons = [
   {
     icon: CreditCard,
     title: "Harga Terjangkau",
-    description: "Dapatkan website profesional dengan harga yang ramah di kantong tanpa mengorbankan kualitas.",
+    description:
+      "Dapatkan website profesional dengan harga yang ramah di kantong tanpa mengorbankan kualitas.",
   },
   {
     icon: Palette,
     title: "Desain Modern",
-    description: "Setiap website didesain dengan trend terkini, responsif, dan user-friendly.",
+    description:
+      "Setiap website didesain dengan trend terkini, responsif, dan user-friendly.",
   },
   {
     icon: Clock,
     title: "Pengerjaan Cepat",
-    description: "Proses pengerjaan efisien dengan timeline yang jelas dan komunikasi yang lancar.",
+    description:
+      "Proses pengerjaan efisien dengan timeline yang jelas dan komunikasi yang lancar.",
   },
   {
     icon: HeadphonesIcon,
@@ -31,12 +34,14 @@ const reasons = [
   {
     icon: Shield,
     title: "Garansi Maintenance",
-    description: "Setiap paket termasuk garansi maintenance untuk memastikan website berjalan optimal.",
+    description:
+      "Setiap paket termasuk garansi maintenance untuk memastikan website berjalan optimal.",
   },
   {
     icon: Zap,
     title: "Website Cepat",
-    description: "Optimasi performa untuk loading time yang cepat dan SEO-friendly.",
+    description:
+      "Optimasi performa untuk loading time yang cepat dan SEO-friendly.",
   },
 ];
 
@@ -46,10 +51,11 @@ export const WhyUsSection = () => {
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
-            Kenapa Pilih <span className="text-primary">RijalsDev</span>?
+            Kenapa Pilih <span className="text-primary">Forstbiz</span>?
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Kami berkomitmen memberikan layanan terbaik dengan hasil yang memuaskan
+            Kami berkomitmen memberikan layanan terbaik dengan hasil yang
+            memuaskan
           </p>
         </div>
 
@@ -65,8 +71,12 @@ export const WhyUsSection = () => {
                 </div>
               </div>
               <div>
-                <h3 className="font-semibold text-foreground mb-2">{reason.title}</h3>
-                <p className="text-sm text-muted-foreground">{reason.description}</p>
+                <h3 className="font-semibold text-foreground mb-2">
+                  {reason.title}
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  {reason.description}
+                </p>
               </div>
             </div>
           ))}

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* RijalsDev Design System - Profesional & Korporat
+/* Forstbiz Design System - Profesional & Korporat
    Primary: Blue tones for trust and professionalism
    Accent: Clean whites with subtle gray undertones
 */
@@ -39,7 +39,7 @@
 
     --radius: 0.75rem;
 
-    /* Custom tokens for RijalsDev */
+    /* Custom tokens for Forstbiz */
     --hero-gradient-start: 217 91% 50%;
     --hero-gradient-end: 217 91% 35%;
     --highlight: 45 93% 58%;
@@ -109,7 +109,9 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
   }
 
   html {
@@ -121,16 +123,24 @@
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent-foreground;
   }
-  
+
   .hero-gradient {
-    background: linear-gradient(135deg, hsl(var(--hero-gradient-start)) 0%, hsl(var(--hero-gradient-end)) 100%);
+    background: linear-gradient(
+      135deg,
+      hsl(var(--hero-gradient-start)) 0%,
+      hsl(var(--hero-gradient-end)) 100%
+    );
   }
-  
+
   .card-shadow {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.05),
+      0 10px 20px -5px rgba(0, 0, 0, 0.1);
   }
-  
+
   .card-shadow-hover {
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+    box-shadow:
+      0 10px 25px -5px rgba(0, 0, 0, 0.1),
+      0 20px 40px -10px rgba(0, 0, 0, 0.15);
   }
 }

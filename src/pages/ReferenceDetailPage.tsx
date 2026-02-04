@@ -226,7 +226,7 @@ const ReferenceDetailPage = () => {
                 {/* CTA */}
                 <div className="flex flex-col sm:flex-row gap-4">
                   <WhatsAppButton
-                    message={`Halo RijalsDev, saya tertarik dengan desain seperti "${reference.title}" (${reference.category}). Bisa konsultasi lebih lanjut?`}
+                    message={`Halo Forstbiz, saya tertarik dengan desain seperti "${reference.title}" (${reference.category}). Bisa konsultasi lebih lanjut?`}
                     size="lg"
                     className="flex-1"
                   >

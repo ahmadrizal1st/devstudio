@@ -38,7 +38,7 @@ const addonPackages = [
       },
     ],
     waMessage:
-      "Halo RijalsDev, saya tertarik dengan layanan Domain Custom. Mohon informasi lebih lanjut.",
+      "Halo Forstbiz, saya tertarik dengan layanan Domain Custom. Mohon informasi lebih lanjut.",
   },
   {
     icon: RefreshCw,
@@ -53,7 +53,7 @@ const addonPackages = [
       { name: "Domain Custom/Premium - 1 tahun", price: "Rp 150rb - Rp 800rb" },
     ],
     waMessage:
-      "Halo RijalsDev, saya ingin perpanjangan domain. Mohon bantuan caranya.",
+      "Halo Forstbiz, saya ingin perpanjangan domain. Mohon bantuan caranya.",
   },
   {
     icon: Server,
@@ -67,7 +67,7 @@ const addonPackages = [
       { name: "Hosting 12 Bulan", price: "Rp 300rb" },
     ],
     waMessage:
-      "Halo RijalsDev, saya ingin perpanjangan hosting. Mohon informasi paket yang tersedia.",
+      "Halo Forstbiz, saya ingin perpanjangan hosting. Mohon informasi paket yang tersedia.",
   },
   {
     icon: Tag,
@@ -102,7 +102,7 @@ const addonPackages = [
       },
     ],
     waMessage:
-      "Halo RijalsDev, saya tertarik dengan paket Bundling Domain + Hosting. Mana yang cocok untuk saya?",
+      "Halo Forstbiz, saya tertarik dengan paket Bundling Domain + Hosting. Mana yang cocok untuk saya?",
   },
 ];
 

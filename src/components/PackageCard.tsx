@@ -1,5 +1,11 @@
 import { Check, Star } from "lucide-react";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { WhatsAppButton } from "./WhatsAppButton";
 import type { Package } from "@/lib/data/packages";
@@ -9,8 +15,13 @@ interface PackageCardProps {
   showAllFeatures?: boolean;
 }
 
-export const PackageCard = ({ pkg, showAllFeatures = false }: PackageCardProps) => {
-  const displayedFeatures = showAllFeatures ? pkg.features : pkg.features.slice(0, 6);
+export const PackageCard = ({
+  pkg,
+  showAllFeatures = false,
+}: PackageCardProps) => {
+  const displayedFeatures = showAllFeatures
+    ? pkg.features
+    : pkg.features.slice(0, 6);
   const hasMoreFeatures = !showAllFeatures && pkg.features.length > 6;
 
   return (
@@ -29,9 +40,13 @@ export const PackageCard = ({ pkg, showAllFeatures = false }: PackageCardProps) 
       )}
 
       <CardHeader className="text-center pb-4">
-        <CardTitle className="text-xl font-bold text-foreground">{pkg.name}</CardTitle>
+        <CardTitle className="text-xl font-bold text-foreground">
+          {pkg.name}
+        </CardTitle>
         <div className="mt-2">
-          <span className="text-3xl font-bold text-primary">{pkg.priceRange}</span>
+          <span className="text-3xl font-bold text-primary">
+            {pkg.priceRange}
+          </span>
         </div>
         <p className="mt-2 text-sm text-muted-foreground">{pkg.description}</p>
       </CardHeader>
@@ -54,7 +69,7 @@ export const PackageCard = ({ pkg, showAllFeatures = false }: PackageCardProps) 
 
       <CardFooter>
         <WhatsAppButton
-          message={`Halo RijalsDev, saya tertarik dengan paket ${pkg.name} (${pkg.priceRange}). Bisa jelaskan lebih detail?`}
+          message={`Halo Forstbiz, saya tertarik dengan paket ${pkg.name} (${pkg.priceRange}). Bisa jelaskan lebih detail?`}
           className="w-full"
         >
           Pilih Paket

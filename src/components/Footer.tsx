@@ -14,7 +14,7 @@ export const Footer = () => {
             <div className="flex items-center gap-3 mb-4">
               <img
                 src="/logo.png"
-                alt="RijalsDev Logo"
+                alt="Forstbiz Logo"
                 className="h-10 w-auto"
               />
               <h3 className="text-2xl font-bold">
@@ -67,7 +67,7 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href={generateWhatsAppLink("Halo RijalsDev!")}
+                  href={generateWhatsAppLink("Halo Forstbiz!")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
@@ -78,11 +78,11 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="mailto:info@rijalsdev.com"
+                  href="mailto:info@Forstbiz.com"
                   className="flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
                   <Mail className="h-4 w-4" />
-                  <span>info@rijalsdev.com</span>
+                  <span>info@Forstbiz.com</span>
                 </a>
               </li>
               <li className="flex items-center gap-2 text-primary-foreground/80">
@@ -95,7 +95,7 @@ export const Footer = () => {
 
         <div className="mt-8 border-t border-primary-foreground/20 pt-8 text-center">
           <p className="text-primary-foreground/60">
-            © {currentYear} RijalsDev. All rights reserved.
+            © {currentYear} Forstbiz. All rights reserved.
           </p>
         </div>
       </div>

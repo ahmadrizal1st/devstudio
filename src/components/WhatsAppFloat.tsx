@@ -4,8 +4,10 @@ import { generateWhatsAppLink } from "@/lib/data/packages";
 export const WhatsAppFloat = () => {
   const handleClick = () => {
     window.open(
-      generateWhatsAppLink("Halo RijalsDev, saya tertarik dengan jasa pembuatan website."),
-      "_blank"
+      generateWhatsAppLink(
+        "Halo Forstbiz, saya tertarik dengan jasa pembuatan website.",
+      ),
+      "_blank",
     );
   };
 

@@ -25,14 +25,13 @@ export const HeroSection = () => {
             </h1>
 
             <p className="mt-6 text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0">
-              RijalsDev membantu bisnis Anda tampil online dengan website berkualitas tinggi. 
-              Dari landing page hingga sistem custom, kami siap mewujudkan visi digital Anda.
+              Forstbiz membantu bisnis Anda tampil online dengan website
+              berkualitas tinggi. Dari landing page hingga sistem custom, kami
+              siap mewujudkan visi digital Anda.
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <WhatsAppButton size="lg">
-                Konsultasi Gratis
-              </WhatsAppButton>
+              <WhatsAppButton size="lg">Konsultasi Gratis</WhatsAppButton>
               <a
                 href="#paket"
                 className="inline-flex items-center justify-center gap-2 rounded-lg border border-input bg-background px-8 py-3 text-sm font-medium text-foreground hover:bg-accent transition-colors"
@@ -46,7 +45,9 @@ export const HeroSection = () => {
             <div className="mt-12 grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0">
               <div className="text-center">
                 <div className="text-2xl font-bold text-primary">100+</div>
-                <div className="text-sm text-muted-foreground">Proyek Selesai</div>
+                <div className="text-sm text-muted-foreground">
+                  Proyek Selesai
+                </div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-primary">50+</div>
@@ -78,10 +79,16 @@ export const HeroSection = () => {
                       <div className="h-12 w-12 rounded-lg bg-primary/20 flex items-center justify-center animate-float">
                         <Code className="h-6 w-6 text-primary" />
                       </div>
-                      <div className="h-12 w-12 rounded-lg bg-accent flex items-center justify-center animate-float" style={{ animationDelay: "0.5s" }}>
+                      <div
+                        className="h-12 w-12 rounded-lg bg-accent flex items-center justify-center animate-float"
+                        style={{ animationDelay: "0.5s" }}
+                      >
                         <Palette className="h-6 w-6 text-accent-foreground" />
                       </div>
-                      <div className="h-12 w-12 rounded-lg bg-success/20 flex items-center justify-center animate-float" style={{ animationDelay: "1s" }}>
+                      <div
+                        className="h-12 w-12 rounded-lg bg-success/20 flex items-center justify-center animate-float"
+                        style={{ animationDelay: "1s" }}
+                      >
                         <Zap className="h-6 w-6 text-success" />
                       </div>
                     </div>

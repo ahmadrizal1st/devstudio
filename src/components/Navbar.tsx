@@ -19,7 +19,7 @@ export const Navbar = () => {
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img src="/logo.png" alt="RijalsDev Logo" className="h-8 w-auto" />{" "}
+          <img src="/logo.png" alt="Forstbiz Logo" className="h-8 w-auto" />{" "}
           <span className="text-2xl font-bold text-foreground">
             Rijals<span className="text-primary">Dev</span>{" "}
           </span>

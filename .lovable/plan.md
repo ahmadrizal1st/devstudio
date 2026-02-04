@@ -1,7 +1,7 @@
-
-# Website RijalsDev - Jasa Pembuatan Website Murah
+# Website Forstbiz - Jasa Pembuatan Website Murah
 
 ## 🎨 Overview Desain
+
 - **Gaya**: Profesional & Korporat - clean, trustworthy, elegan
 - **Warna Tema**: Biru & Putih dengan aksen yang subtle
 - **Typography**: Modern dan mudah dibaca
@@ -11,12 +11,14 @@
 ## 📄 Halaman Utama (Home)
 
 ### Hero Section
+
 - Headline menarik tentang jasa pembuatan website murah
-- Tagline yang menjelaskan value proposition RijalsDev
+- Tagline yang menjelaskan value proposition Forstbiz
 - Tombol CTA utama menuju WhatsApp
 - Visual ilustrasi atau mockup website
 
 ### Layanan Section
+
 - Penjelasan singkat 5 kategori layanan utama:
   - Landing Page
   - Company Profile
@@ -26,6 +28,7 @@
 - Icon dan deskripsi singkat untuk masing-masing
 
 ### Paket Simple (Highlight)
+
 - 3 paket utama dalam card yang eye-catching:
   - **Starter** - Rp 1.500.000
   - **Growth** - Rp 2.750.000
@@ -34,6 +37,7 @@
 - Tombol "Hubungi Kami" yang terhubung ke WhatsApp
 
 ### Paket Kategori (Detail)
+
 - Tab atau accordion untuk setiap kategori:
   - Landing Page (Starter/Business/Pro)
   - Company Profile (Starter/Business/Pro)
@@ -44,22 +48,26 @@
 - Setiap paket ada tombol WhatsApp
 
 ### Referensi Preview Section
+
 - Carousel atau grid 6-8 contoh mockup referensi
 - Tombol "Lihat Semua Referensi" menuju /reference
 
 ### Kenapa Pilih Kami Section
-- Keunggulan RijalsDev (harga terjangkau, kualitas, support, dll)
+
+- Keunggulan Forstbiz (harga terjangkau, kualitas, support, dll)
 
 ### Footer
+
 - Info kontak (WhatsApp)
 - Link ke halaman Referensi
-- Copyright RijalsDev
+- Copyright Forstbiz
 
 ---
 
 ## 📄 Halaman Referensi (/reference)
 
 ### Grid Referensi
+
 - Tampilan grid 20+ mockup contoh website
 - Setiap card menampilkan:
   - Preview image (mockup/dummy)
@@ -68,6 +76,7 @@
   - Tombol "Lihat Detail" dan "Hubungi via WA"
 
 ### Filter
+
 - Filter berdasarkan kategori website
 - Search bar untuk mencari referensi
 
@@ -76,6 +85,7 @@
 ## 📄 Halaman Detail Referensi (/reference/[id])
 
 ### Preview Detail
+
 - Gambar mockup lebih besar
 - Deskripsi konsep website
 - Fitur-fitur yang terlihat di mockup
@@ -85,6 +95,7 @@
 ---
 
 ## 🔧 Fitur Teknis
+
 - Responsif untuk mobile, tablet, dan desktop
 - Animasi scroll smooth
 - WhatsApp floating button di semua halaman
@@ -94,6 +105,7 @@
 ---
 
 ## 📱 Integrasi WhatsApp
+
 - Semua tombol CTA terhubung ke WhatsApp
 - Pesan otomatis yang menyebutkan paket/referensi yang dipilih
 - Nomor WhatsApp menggunakan placeholder (dapat diubah nanti)
