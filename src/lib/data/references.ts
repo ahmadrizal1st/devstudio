@@ -29,7 +29,6 @@ export const references: Reference[] = [
     ],
     image: "",
     suggestedPackage: "Landing Page Business",
-    websiteHtml: ``,
   },
   {
     id: "ref-2",

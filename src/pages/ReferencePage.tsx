@@ -7,8 +7,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { ReferenceCard } from "@/components/ReferenceCard";
-import { categories, getReferencesByCategory } from "@/lib/data/references";
-
+import { getReferencesByCategory, categories } from "@/lib/data/references";
 const ReferencePage = () => {
   const [activeCategory, setActiveCategory] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");

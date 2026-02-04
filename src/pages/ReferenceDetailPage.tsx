@@ -125,6 +125,26 @@ const ReferenceDetailPage = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {/* CSS for preview container to prevent sticky navbar overflow */}
+      <style>{`
+        .preview-container {
+          contain: layout style;
+        }
+        .preview-container nav,
+        .preview-container header,
+        .preview-container .navbar {
+          position: relative !important;
+          top: 0 !important;
+        }
+        .preview-container .sticky {
+          position: relative !important;
+          top: 0 !important;
+        }
+        .preview-container [class*="sticky"] {
+          position: relative !important;
+          top: 0 !important;
+        }
+      `}</style>
       <Navbar />
 
       <main className="flex-1">
@@ -326,7 +346,7 @@ const ReferenceDetailPage = () => {
                     </div>
 
                     {/* Preview Content */}
-                    <div className="bg-white">
+                    <div className="bg-white relative pt-2">
                       {(reference.url && previewTab === "url") ||
                       (previewTab === "html" && reference.websiteHtml) ? (
                         reference.url && previewTab === "url" ? (
@@ -350,7 +370,7 @@ const ReferenceDetailPage = () => {
                                 : previewMode === "tablet"
                                   ? "h-[800px]"
                                   : "h-[600px] lg:h-[700px]"
-                            }`}
+                            } preview-container`}
                             dangerouslySetInnerHTML={{
                               __html: reference.websiteHtml,
                             }}
