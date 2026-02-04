@@ -21,7 +21,7 @@ export const Navbar = () => {
         <Link to="/" className="flex items-center">
           <img src="/logo.png" alt="Forstbiz Logo" className="h-8 w-auto" />{" "}
           <span className="text-2xl font-bold text-foreground">
-            Rijals<span className="text-primary">Dev</span>{" "}
+            Forst<span className="text-primary">biz</span>{" "}
           </span>
         </Link>
 

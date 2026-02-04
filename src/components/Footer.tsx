@@ -18,7 +18,7 @@ export const Footer = () => {
                 className="h-10 w-auto"
               />
               <h3 className="text-2xl font-bold">
-                Rijals<span className="text-primary">Dev</span>
+                Forst<span className="text-primary">biz</span>
               </h3>
             </div>
             <p className="text-primary-foreground/80">
