@@ -225,6 +225,23 @@ const ReferenceDetailPage = () => {
 
                 {/* CTA */}
                 <div className="flex flex-col sm:flex-row gap-4">
+                  {reference.url && (
+                    <a
+                      href={reference.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1"
+                    >
+                      <Button
+                        variant="default"
+                        size="lg"
+                        className="w-full gap-2"
+                      >
+                        <Globe className="h-4 w-4" />
+                        Lihat Website Asli
+                      </Button>
+                    </a>
+                  )}
                   <WhatsAppButton
                     message={`Halo Forstbiz, saya tertarik dengan desain seperti "${reference.title}" (${reference.category}). Bisa konsultasi lebih lanjut?`}
                     size="lg"

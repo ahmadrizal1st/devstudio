@@ -29,6 +29,7 @@ export const references: Reference[] = [
     ],
     image: "/references/klinik-kecantikan-aurora.png",
     suggestedPackage: "Landing Page Business",
+    url: "https://buffer-match-83241886.figma.site/",
   },
   {
     id: "ref-2",
