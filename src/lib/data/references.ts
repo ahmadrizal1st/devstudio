@@ -27,7 +27,7 @@ export const references: Reference[] = [
       "Form konsultasi",
       "WhatsApp floating",
     ],
-    image: "",
+    image: "/references/klinik-kecantikan-aurora.png",
     suggestedPackage: "Landing Page Business",
   },
   {

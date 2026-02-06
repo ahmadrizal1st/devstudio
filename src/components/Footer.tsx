@@ -15,11 +15,11 @@ export const Footer = () => {
               <img
                 src="/logo.png"
                 alt="Forstbiz Logo"
-                className="h-10 w-auto"
+                className="h-15 w-auto"
               />
-              <h3 className="text-2xl font-bold">
+              {/* <h3 className="text-2xl font-bold">
                 Forst<span className="text-primary">biz</span>
-              </h3>
+              </h3> */}
             </div>
             <p className="text-primary-foreground/80">
               Jasa pembuatan website profesional dengan harga terjangkau untuk

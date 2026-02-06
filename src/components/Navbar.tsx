@@ -19,10 +19,10 @@ export const Navbar = () => {
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img src="/logo.png" alt="Forstbiz Logo" className="h-8 w-auto" />{" "}
-          <span className="text-2xl font-bold text-foreground">
+          <img src="/logo.png" alt="Forstbiz Logo" className="h-14 w-auto" />{" "}
+          {/* <span className="text-2xl font-bold text-foreground">
             Forst<span className="text-primary">biz</span>{" "}
-          </span>
+          </span> */}
         </Link>
 
         {/* Desktop Navigation */}
