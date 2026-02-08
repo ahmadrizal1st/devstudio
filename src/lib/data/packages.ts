@@ -645,7 +645,7 @@ export const packageCategories: PackageCategory[] = [
   },
 ];
 
-export const WHATSAPP_NUMBER = "6281234567890"; // Placeholder - ganti dengan nomor asli
+export const WHATSAPP_NUMBER = "6281391015799"; // Placeholder - ganti dengan nomor asli
 
 export const generateWhatsAppLink = (message: string): string => {
   const encodedMessage = encodeURIComponent(message);

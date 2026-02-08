@@ -45,8 +45,9 @@ export const references: Reference[] = [
       "FAQ accordion",
       "Countdown timer",
     ],
-    image: "",
+    image: "/references/kursus-online-masterclass.png",
     suggestedPackage: "Landing Page Pro",
+    url: "https://bleak-arena-03832158.figma.site/",
   },
   {
     id: "ref-3",
@@ -62,8 +63,9 @@ export const references: Reference[] = [
       "Area delivery",
       "WhatsApp order",
     ],
-    image: "/placeholder.svg",
+    image: "/references/catering-sehat-nutribox.png",
     suggestedPackage: "Landing Page Business",
+    url: "https://fresh-glue-09810750.figma.site/",
   },
   {
     id: "ref-4",
@@ -79,8 +81,9 @@ export const references: Reference[] = [
       "Quote form",
       "Animasi scroll",
     ],
-    image: "/placeholder.svg",
+    image: "/references/event-organizer-sparkle.png",
     suggestedPackage: "Landing Page Pro",
+    url: "https://italic-hex-04617314.figma.site/",
   },
   // Company Profile
   {
