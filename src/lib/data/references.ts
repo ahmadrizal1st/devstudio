@@ -154,8 +154,9 @@ export const references: Reference[] = [
       "Laporan donasi",
       "Form donatur",
     ],
-    image: "/placeholder.svg",
+    image: "/references/yayasan-peduli-anak.png",
     suggestedPackage: "Company Profile Starter",
+    url: "https://award-edge-82522623.figma.site/",
   },
   // UMKM / Bisnis
   {
