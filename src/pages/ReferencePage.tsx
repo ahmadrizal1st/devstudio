@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { Search, ArrowLeft, Loader2, ChevronDown } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -8,14 +8,46 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { ReferenceCard } from "@/components/ReferenceCard";
 import { getReferencesByCategory, categories } from "@/lib/data/references";
+
 const ReferencePage = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  // Initialize state from URL parameters
+  const [activeCategory, setActiveCategory] = useState(
+    searchParams.get("category") || "all",
+  );
+  const [searchQuery, setSearchQuery] = useState(searchParams.get("q") || "");
 
   // Infinite scroll state
   const [displayedCount, setDisplayedCount] = useState(8);
   const [loading, setLoading] = useState(false);
   const ITEMS_PER_PAGE = 8;
+
+  // Update URL when search query changes
+  useEffect(() => {
+    const params = new URLSearchParams(searchParams.toString());
+
+    if (searchQuery.trim()) {
+      params.set("q", searchQuery.trim());
+    } else {
+      params.delete("q");
+    }
+
+    setSearchParams(params);
+  }, [searchQuery, setSearchParams]);
+
+  // Update URL when category changes
+  useEffect(() => {
+    const params = new URLSearchParams(searchParams.toString());
+
+    if (activeCategory !== "all") {
+      params.set("category", activeCategory);
+    } else {
+      params.delete("category");
+    }
+
+    setSearchParams(params);
+  }, [activeCategory, setSearchParams, searchParams]);
 
   // Get filtered references
   const filteredReferences = getReferencesByCategory(activeCategory).filter(

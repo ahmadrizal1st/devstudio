@@ -242,13 +242,15 @@ const ReferenceDetailPage = () => {
                       </Button>
                     </a>
                   )}
-                  <WhatsAppButton
-                    message={`Halo Forstbiz, saya tertarik dengan desain seperti "${reference.title}" (${reference.category}). Bisa konsultasi lebih lanjut?`}
-                    size="lg"
-                    className="flex-1"
-                  >
-                    Konsultasi Desain Ini
-                  </WhatsAppButton>
+                  <div className="w-full">
+                    <WhatsAppButton
+                      message={`Halo Forstbiz, saya tertarik dengan desain seperti "${reference.title}" (${reference.category}). Bisa konsultasi lebih lanjut?`}
+                      size="lg"
+                      className="w-full"
+                    >
+                      Konsultasi Desain Ini
+                    </WhatsAppButton>
+                  </div>
                   <Link to="/reference" className="flex-1">
                     <Button variant="outline" size="lg" className="w-full">
                       Lihat Referensi Lain
