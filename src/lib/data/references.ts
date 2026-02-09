@@ -100,8 +100,9 @@ export const references: Reference[] = [
       "Tim manajemen",
       "Sertifikasi",
     ],
-    image: "/placeholder.svg",
+    image: "/references/pt-konstruksi-mandiri.png",
     suggestedPackage: "Company Profile Business",
+    url: "https://coffee-slaw-44349086.figma.site/",
   },
   {
     id: "ref-6",
@@ -117,8 +118,9 @@ export const references: Reference[] = [
       "Blog artikel hukum",
       "Testimonial klien",
     ],
-    image: "/placeholder.svg",
+    image: "/references/firma-hukum-adil-sejahtera.png",
     suggestedPackage: "Company Profile Pro",
+    url: "https://sling-header-50319569.figma.site/",
   },
   {
     id: "ref-7",
@@ -134,8 +136,9 @@ export const references: Reference[] = [
       "Booking form",
       "Lokasi & jam buka",
     ],
-    image: "/placeholder.svg",
+    image: "/references/klinik-gigi-smilecenter.png",
     suggestedPackage: "Company Profile Business",
+    url: "https://plane-buy-44065998.figma.site/",
   },
   {
     id: "ref-8",
