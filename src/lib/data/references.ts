@@ -173,8 +173,9 @@ export const references: Reference[] = [
       "Custom order",
       "WhatsApp order",
     ],
-    image: "/placeholder.svg",
+    image: "/references/batik-nusantara-collection.png",
     suggestedPackage: "Website UMKM Business",
+    url: "https://city-jot-49517738.figma.site/",
   },
   {
     id: "ref-10",
@@ -190,8 +191,9 @@ export const references: Reference[] = [
       "Tips otomotif",
       "Lokasi bengkel",
     ],
-    image: "/placeholder.svg",
+    image: "/references/bengkel-mobil-autocare.png",
     suggestedPackage: "Website UMKM Starter",
+    url: "https://tack-decor-04808493.figma.site/",
   },
   {
     id: "ref-11",
@@ -206,8 +208,9 @@ export const references: Reference[] = [
       "Booking calendar",
       "Testimoni klien",
     ],
-    image: "/placeholder.svg",
+    image: "/references/studio-foto-moment.png",
     suggestedPackage: "Website UMKM Business",
+    url: "https://dry-maker-55903599.figma.site/",
   },
   {
     id: "ref-12",
