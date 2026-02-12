@@ -247,6 +247,7 @@ export const references: Reference[] = [
     ],
     image: "/references/fashion-store-trendy.png",
     suggestedPackage: "Toko Online Business",
+    url: "https://direct-matrix-25412829.figma.site/",
   },
   {
     id: "ref-14",
@@ -262,8 +263,9 @@ export const references: Reference[] = [
       "Stock status",
       "Checkout system",
     ],
-    image: "/placeholder.svg",
+    image: "/references/elektronik-jaya-store.png",
     suggestedPackage: "Toko Online Pro",
+    url: "https://lyric-clash-47414667.figma.site/",
   },
   {
     id: "ref-15",
@@ -279,8 +281,9 @@ export const references: Reference[] = [
       "Reseller program",
       "Order tracking",
     ],
-    image: "/placeholder.svg",
+    image: "/references/herbal-alami-store.png",
     suggestedPackage: "Toko Online Business",
+    url: "https://beauty-storm-30590892.figma.site/",
   },
   {
     id: "ref-16",
