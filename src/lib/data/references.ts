@@ -298,8 +298,9 @@ export const references: Reference[] = [
       "Rekomendasi",
       "Pre-order feature",
     ],
-    image: "/placeholder.svg",
+    image: "/references/buku-pintar-store.png",
     suggestedPackage: "Toko Online Starter",
+    url: "https://dandy-delay-35614816.figma.site/",
   },
   // Custom System
   {
@@ -316,8 +317,9 @@ export const references: Reference[] = [
       "Laporan bulanan",
       "Export Excel",
     ],
-    image: "/placeholder.svg",
+    image: "/references/sistem-inventaris-gudang.png",
     suggestedPackage: "Custom System Business",
+    url: "https://widen-square-65312121.figma.site/",
   },
   {
     id: "ref-18",
