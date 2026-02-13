@@ -335,8 +335,9 @@ export const references: Reference[] = [
       "SMS notification",
       "Dashboard report",
     ],
-    image: "/placeholder.svg",
+    image: "/references/aplikasi-reservasi-restoran.png",
     suggestedPackage: "Custom System Pro",
+    url: "https://snack-chase-85699804.figma.site/",
   },
   {
     id: "ref-19",
@@ -351,8 +352,9 @@ export const references: Reference[] = [
       "Data karyawan",
       "Multi-role access",
     ],
-    image: "/placeholder.svg",
+    image: "/references/portal-karyawan-hrd.png",
     suggestedPackage: "Custom System Pro",
+    url: "https://chomp-action-79189249.figma.site/",
   },
   {
     id: "ref-20",
