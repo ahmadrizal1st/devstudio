@@ -370,8 +370,9 @@ export const references: Reference[] = [
       "Member system",
       "Report penjualan",
     ],
-    image: "/placeholder.svg",
+    image: "/references/sistem-booking-lapangan.png",
     suggestedPackage: "Custom System Business",
+    url: "https://ferry-rem-66442037.figma.site/",
   },
   {
     id: "ref-21",
@@ -387,8 +388,9 @@ export const references: Reference[] = [
       "Certificate generator",
       "Discussion forum",
     ],
-    image: "/placeholder.svg",
+    image: "/references/e-learning-platform.png",
     suggestedPackage: "Custom System Pro",
+    url: "https://mouse-node-11975601.figma.site/",
   },
   {
     id: "ref-22",
