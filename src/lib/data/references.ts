@@ -424,8 +424,9 @@ export const references: Reference[] = [
       "Booking form",
       "Testimoni traveler",
     ],
-    image: "/placeholder.svg",
+    image: "/references/travel-agency-paradise.png",
     suggestedPackage: "Landing Page Pro",
+    url: "https://snore-bonus-75427746.figma.site/",
   },
   {
     id: "ref-24",
@@ -440,8 +441,9 @@ export const references: Reference[] = [
       "Virtual tour",
       "Free trial form",
     ],
-    image: "/placeholder.svg",
+    image: "/references/gym-fitness-center.png",
     suggestedPackage: "Company Profile Business",
+    url: "https://chisel-notify-76715910.figma.site/",
   },
   {
     id: "ref-25",
@@ -686,8 +688,9 @@ export const references: Reference[] = [
       "Garansi produk",
       "Gift wrapping",
     ],
-    image: "/placeholder.svg",
+    image: "/references/tas-kulit-premium.png",
     suggestedPackage: "Toko Online Business",
+    url: "https://editor-bold-93636798.figma.site/",
   },
   {
     id: "ref-39",
