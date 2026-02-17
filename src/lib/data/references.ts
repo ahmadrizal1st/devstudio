@@ -547,8 +547,9 @@ export const references: Reference[] = [
       "Mountain guide",
       "Safety briefing",
     ],
-    image: "/placeholder.svg",
+    image: "/references/pendakian-gunung-merapi.png",
     suggestedPackage: "Tour & Travel Starter",
+    url: "https://buzz-blues-35493430.figma.site",
   },
   {
     id: "ref-31",
