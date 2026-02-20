@@ -459,8 +459,9 @@ export const references: Reference[] = [
       "Edukasi jantung",
       "Emergency contact",
     ],
-    image: "/placeholder.svg",
+    image: "/references/klinik-spesialis-jantung.png",
     suggestedPackage: "Company Profile Pro",
+    url: "https://raft-igloo-20407523.figma.site/",
   },
   {
     id: "ref-26",
@@ -476,8 +477,9 @@ export const references: Reference[] = [
       "Pendaftaran online",
       "Testimoni orang tua",
     ],
-    image: "/placeholder.svg",
+    image: "/references/sekolah-internasional-bright.png",
     suggestedPackage: "Company Profile Pro",
+    url: "https://care-toggle-12469246.figma.site/",
   },
   {
     id: "ref-27",
@@ -493,8 +495,9 @@ export const references: Reference[] = [
       "Investasi properti",
       "Contact agent",
     ],
-    image: "/placeholder.svg",
+    image: "/references/per-businesses-real-estate-properti.png",
     suggestedPackage: "Company Profile Pro",
+    url: "https://iframe-icy-33888403.figma.site/",
   },
   // Tour & Travel (NEW CATEGORY)
   {
