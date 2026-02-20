@@ -568,8 +568,9 @@ export const references: Reference[] = [
       "Restoran halal",
       "Wisata edukasi",
     ],
-    image: "/placeholder.svg",
+    image: "/references/wisata-halal-indonesia.png",
     suggestedPackage: "Tour & Travel Business",
+    url: "https://tamp-candy-80086165.figma.site/",
   },
   {
     id: "ref-32",
@@ -585,8 +586,9 @@ export const references: Reference[] = [
       "Tour guide",
       "Hotel booking",
     ],
-    image: "/placeholder.svg",
+    image: "/references/jakarta-city-tour.png",
     suggestedPackage: "Tour & Travel Starter",
+    url: "https://opal-dog-31160397.figma.site/",
   },
   // Additional UMKM / Bisnis
   {
