@@ -406,8 +406,9 @@ export const references: Reference[] = [
       "Angsuran",
       "Laporan keuangan",
     ],
-    image: "/placeholder.svg",
+    image: "/references/aplikasi-koperasi.png",
     suggestedPackage: "Custom System Business",
+    url: "https://theory-cut-24910582.figma.site/",
   },
   // Additional references to reach 20+
   {
