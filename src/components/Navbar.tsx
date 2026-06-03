@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { WhatsAppButton } from "./WhatsAppButton";
+import { ThemeToggle } from "./ThemeToggle";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,14 +16,12 @@ export const Navbar = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-40 w-full border-b border-border/40 bg-background/60 backdrop-blur-md supports-[backdrop-filter]:bg-background/40">
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img src="/logo.png" alt="Forstbiz Logo" className="h-14 w-auto" />{" "}
-          {/* <span className="text-2xl font-bold text-foreground">
-            Forst<span className="text-primary">biz</span>{" "}
-          </span> */}
+          <img src="/logo-dark.png" alt="DevStudio Logo" className="h-14 w-auto block dark:hidden" />
+          <img src="/logo-light.png" alt="DevStudio Logo" className="h-14 w-auto hidden dark:block" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -47,6 +46,7 @@ export const Navbar = () => {
               </a>
             ),
           )}
+          <ThemeToggle />
           <WhatsAppButton size="sm">Konsultasi</WhatsAppButton>
         </nav>
 
@@ -63,6 +63,11 @@ export const Navbar = () => {
             <Menu className="h-5 w-5" />
           )}
         </Button>
+        
+        {/* Mobile Theme Toggle */}
+        <div className="md:hidden flex items-center ml-2">
+          <ThemeToggle />
+        </div>
       </div>
 
       {/* Mobile Navigation */}

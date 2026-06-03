@@ -26,13 +26,13 @@ export const CategoryPackagesSection = () => {
   const [activeCategory, setActiveCategory] = useState(packageCategories[0].id);
 
   return (
-    <section id="paket-detail" className="py-20 bg-background">
-      <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
+    <section id="paket-detail" className="py-20 relative">
+      <div className="container relative z-10">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight">
             Paket <span className="text-primary">Berdasarkan Kategori</span>
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
             Detail lengkap paket untuk setiap jenis website. Pilih yang paling
             sesuai dengan kebutuhan bisnis Anda.
           </p>

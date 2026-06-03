@@ -47,15 +47,14 @@ const reasons = [
 
 export const WhyUsSection = () => {
   return (
-    <section id="kenapa-kami" className="py-20 bg-background">
-      <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
-            Kenapa Pilih <span className="text-primary">Forstbiz</span>?
+    <section id="kenapa-kami" className="py-20 relative">
+      <div className="container relative z-10">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight">
+            Kenapa Pilih <span className="text-primary">DevStudio</span>?
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Kami berkomitmen memberikan layanan terbaik dengan hasil yang
-            memuaskan
+          <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
+            Kami berkomitmen memberikan layanan terbaik dengan hasil yang memuaskan
           </p>
         </div>
 
@@ -63,18 +62,18 @@ export const WhyUsSection = () => {
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="flex gap-4 p-6 rounded-lg border bg-card hover:shadow-md transition-shadow"
+              className="glass-card flex gap-4 p-6 rounded-xl transition-all duration-300 group hover:border-primary/30"
             >
               <div className="shrink-0">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                   <reason.icon className="h-6 w-6" />
                 </div>
               </div>
               <div>
-                <h3 className="font-semibold text-foreground mb-2">
+                <h3 className="font-bold text-lg text-foreground mb-2">
                   {reason.title}
                 </h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   {reason.description}
                 </p>
               </div>

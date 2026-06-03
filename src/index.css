@@ -9,39 +9,29 @@
 
 @layer base {
   :root {
-    --background: 210 33% 98%;
-    --foreground: 215 25% 15%;
-
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
-
+    --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
-
-    --primary: 217 91% 50%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 215 25% 25%;
-
-    --muted: 210 25% 93%;
-    --muted-foreground: 215 15% 45%;
-
-    --accent: 210 100% 95%;
-    --accent-foreground: 217 91% 40%;
-
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 214 20% 88%;
-    --input: 214 20% 88%;
-    --ring: 217 91% 50%;
-
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 255 92% 60%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 255 92% 60%;
     --radius: 0.75rem;
-
-    /* Custom tokens for Forstbiz */
-    --hero-gradient-start: 217 91% 50%;
-    --hero-gradient-end: 217 91% 35%;
+    
+    --hero-gradient-start: 255 92% 60%;
+    --hero-gradient-end: 280 80% 60%;
     --highlight: 45 93% 58%;
     --success: 142 76% 36%;
     --whatsapp: 142 70% 45%;
@@ -53,52 +43,44 @@
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 255 92% 60%;
   }
 
   .dark {
-    --background: 215 25% 8%;
-    --foreground: 210 40% 98%;
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 255 92% 60%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 255 92% 60%;
 
-    --card: 215 25% 12%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 215 25% 12%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 217 91% 60%;
-    --primary-foreground: 215 25% 8%;
-
-    --secondary: 217 25% 20%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217 25% 18%;
-    --muted-foreground: 215 20% 65%;
-
-    --accent: 217 50% 20%;
-    --accent-foreground: 217 91% 70%;
-
-    --destructive: 0 62% 30%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217 25% 22%;
-    --input: 217 25% 22%;
-    --ring: 217 91% 60%;
-
-    --hero-gradient-start: 217 91% 55%;
-    --hero-gradient-end: 217 91% 40%;
+    --hero-gradient-start: 255 92% 60%;
+    --hero-gradient-end: 280 80% 60%;
     --highlight: 45 93% 50%;
     --success: 142 76% 40%;
     --whatsapp: 142 70% 50%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary: 255 92% 60%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 255 92% 60%;
   }
 }
 
@@ -151,5 +133,13 @@
 
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
+  }
+
+  .glass-card {
+    @apply bg-card/95 backdrop-blur-md border border-border;
+  }
+  
+  .dark .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
   }
 }

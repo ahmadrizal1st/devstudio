@@ -5,7 +5,7 @@ export const WhatsAppFloat = () => {
   const handleClick = () => {
     window.open(
       generateWhatsAppLink(
-        "Halo Forstbiz, saya tertarik dengan jasa pembuatan website.",
+        "Halo DevStudio, saya tertarik dengan jasa pembuatan website.",
       ),
       "_blank",
     );

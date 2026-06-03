@@ -38,7 +38,7 @@ const addonPackages = [
       },
     ],
     waMessage:
-      "Halo Forstbiz, saya tertarik dengan layanan Domain Custom. Mohon informasi lebih lanjut.",
+      "Halo DevStudio, saya tertarik dengan layanan Domain Custom. Mohon informasi lebih lanjut.",
   },
   {
     icon: RefreshCw,
@@ -53,7 +53,7 @@ const addonPackages = [
       { name: "Domain Custom/Premium - 1 tahun", price: "Rp 150rb - Rp 800rb" },
     ],
     waMessage:
-      "Halo Forstbiz, saya ingin perpanjangan domain. Mohon bantuan caranya.",
+      "Halo DevStudio, saya ingin perpanjangan domain. Mohon bantuan caranya.",
   },
   {
     icon: Server,
@@ -67,7 +67,7 @@ const addonPackages = [
       { name: "Hosting 12 Bulan", price: "Rp 300rb" },
     ],
     waMessage:
-      "Halo Forstbiz, saya ingin perpanjangan hosting. Mohon informasi paket yang tersedia.",
+      "Halo DevStudio, saya ingin perpanjangan hosting. Mohon informasi paket yang tersedia.",
   },
   {
     icon: Tag,
@@ -102,7 +102,7 @@ const addonPackages = [
       },
     ],
     waMessage:
-      "Halo Forstbiz, saya tertarik dengan paket Bundling Domain + Hosting. Mana yang cocok untuk saya?",
+      "Halo DevStudio, saya tertarik dengan paket Bundling Domain + Hosting. Mana yang cocok untuk saya?",
   },
 ];
 
@@ -112,13 +112,13 @@ export const AddonPackagesSection = () => {
   };
 
   return (
-    <section id="paket-tambahan" className="py-20 bg-muted/30">
-      <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
+    <section id="paket-tambahan" className="py-20 relative">
+      <div className="container relative z-10">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight">
             Paket <span className="text-primary">Tambahan</span>
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
             Tingkatkan dan perpanjang layanan website Anda dengan paket tambahan
             kami
           </p>
@@ -126,18 +126,18 @@ export const AddonPackagesSection = () => {
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {addonPackages.map((pkg, index) => (
-            <Card
+            <div
               key={index}
-              className="group transition-all duration-300 hover:shadow-lg hover:border-primary/50 hover:-translate-y-1 flex flex-col"
+              className="glass-card group transition-all duration-300 hover:border-primary/30 flex flex-col rounded-xl overflow-hidden p-6"
             >
-              <CardContent className="p-6 flex-1 flex flex-col">
-                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+              <div className="flex-1 flex flex-col">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors shrink-0">
                   <pkg.icon className="h-6 w-6" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-foreground">
                   {pkg.title}
                 </h3>
-                <p className="text-muted-foreground mb-4">{pkg.description}</p>
+                <p className="text-muted-foreground mb-4 text-sm leading-relaxed">{pkg.description}</p>
 
                 {pkg.accordion ? (
                   <div className="flex-1">
@@ -200,8 +200,8 @@ export const AddonPackagesSection = () => {
                   <MessageCircle className="mr-2 h-4 w-4" />
                   Pesan Sekarang
                 </Button>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
 

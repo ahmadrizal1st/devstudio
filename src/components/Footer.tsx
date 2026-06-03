@@ -6,24 +6,20 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-foreground text-primary-foreground">
-      <div className="container py-12">
+    <footer className="bg-[#050508] border-t border-white/5 text-foreground relative z-10">
+      <div className="container py-12 lg:py-16">
         <div className="grid gap-8 md:grid-cols-3">
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-3 mb-6">
               <img
-                src="/logo.png"
-                alt="Forstbiz Logo"
-                className="h-15 w-auto"
+                src="/logo-light.png"
+                alt="DevStudio Logo"
+                className="h-12 w-auto filter drop-shadow-md"
               />
-              {/* <h3 className="text-2xl font-bold">
-                Forst<span className="text-primary">biz</span>
-              </h3> */}
             </div>
-            <p className="text-primary-foreground/80">
-              Jasa pembuatan website profesional dengan harga terjangkau untuk
-              bisnis Anda.
+            <p className="text-muted-foreground leading-relaxed max-w-sm">
+              Jasa pembuatan website profesional dengan harga terjangkau untuk bisnis Anda. Platform kolaborasi tangguh untuk tim modern.
             </p>
           </div>
 
@@ -34,7 +30,7 @@ export const Footer = () => {
               <li>
                 <a
                   href="/#layanan"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                  className="text-muted-foreground hover:text-foreground hover:text-primary transition-colors"
                 >
                   Layanan
                 </a>
@@ -42,7 +38,7 @@ export const Footer = () => {
               <li>
                 <a
                   href="/#paket"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                  className="text-muted-foreground hover:text-foreground hover:text-primary transition-colors"
                 >
                   Paket Harga
                 </a>
@@ -53,7 +49,7 @@ export const Footer = () => {
                   onClick={() =>
                     window.scrollTo({ top: 0, behavior: "smooth" })
                   }
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                  className="text-muted-foreground hover:text-foreground hover:text-primary transition-colors"
                 >
                   Referensi
                 </Link>
@@ -67,10 +63,10 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href={generateWhatsAppLink("Halo Forstbiz!")}
+                  href={generateWhatsAppLink("Halo DevStudio!")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-foreground hover:text-primary transition-colors"
                 >
                   <MessageCircle className="h-4 w-4" />
                   <span>+{WHATSAPP_NUMBER}</span>
@@ -78,14 +74,14 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="mailto:info@Forstbiz.com"
-                  className="flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                  href="mailto:info@DevStudio.com"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-foreground hover:text-primary transition-colors"
                 >
                   <Mail className="h-4 w-4" />
-                  <span>forstbizs@gmail.com</span>
+                  <span>devstudio.click@gmail.com</span>
                 </a>
               </li>
-              <li className="flex items-center gap-2 text-primary-foreground/80">
+              <li className="flex items-center gap-2 text-muted-foreground">
                 <MapPin className="h-4 w-4" />
                 <span>Daerah Istimewa Yogyakarta, Indonesia</span>
               </li>
@@ -93,9 +89,9 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-primary-foreground/20 pt-8 text-center">
-          <p className="text-primary-foreground/60">
-            © {currentYear} Forstbiz. All rights reserved.
+        <div className="mt-8 border-t border-white/5 pt-8 text-center">
+          <p className="text-muted-foreground">
+            © {currentYear} DevStudio. All rights reserved.
           </p>
         </div>
       </div>

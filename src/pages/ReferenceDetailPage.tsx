@@ -25,6 +25,7 @@ import {
   getReferencesByCategory,
   Reference,
 } from "@/lib/data/references";
+import { useTheme } from "@/components/ThemeProvider";
 
 const ReferenceDetailPage = () => {
   const { id } = useParams<{ id: string }>();
@@ -35,6 +36,15 @@ const ReferenceDetailPage = () => {
   const [previewTab, setPreviewTab] = useState<"url" | "html">(
     reference?.url ? "url" : "html",
   );
+  
+  const { theme } = useTheme();
+  const currentTheme = theme === "system" 
+    ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") 
+    : theme;
+
+  const displayImage = reference?.image === "/placeholder-light.svg" && currentTheme === "dark"
+    ? "/placeholder-dark.svg"
+    : reference?.image || "";
 
   // Screen size detection for preview buttons
   const [isMobile, setIsMobile] = useState(false);
@@ -168,10 +178,10 @@ const ReferenceDetailPage = () => {
               {/* Image */}
               <div className="relative aspect-video rounded-xl overflow-hidden bg-muted border shadow-lg">
                 <img
-                  src={reference.image}
+                  src={displayImage}
                   alt={reference.title}
                   onError={(e) => {
-                    e.currentTarget.src = "/placeholder.svg";
+                    e.currentTarget.src = currentTheme === "dark" ? "/placeholder-dark.svg" : "/placeholder-light.svg";
                   }}
                   className="h-full w-full object-cover"
                 />
@@ -244,7 +254,7 @@ const ReferenceDetailPage = () => {
                   )}
                   <div className="w-full">
                     <WhatsAppButton
-                      message={`Halo Forstbiz, saya tertarik dengan desain seperti "${reference.title}" (${reference.category}). Bisa konsultasi lebih lanjut?`}
+                      message={`Halo DevStudio, saya tertarik dengan desain seperti "${reference.title}" (${reference.category}). Bisa konsultasi lebih lanjut?`}
                       size="lg"
                       className="w-full"
                     >

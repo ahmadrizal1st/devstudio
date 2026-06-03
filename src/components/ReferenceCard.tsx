@@ -5,16 +5,26 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { generateWhatsAppLink } from "@/lib/data/packages";
 import type { Reference } from "@/lib/data/references";
+import { useTheme } from "@/components/ThemeProvider";
 
 interface ReferenceCardProps {
   reference: Reference;
 }
 
 export const ReferenceCard = ({ reference }: ReferenceCardProps) => {
+  const { theme } = useTheme();
+  const currentTheme = theme === "system" 
+    ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") 
+    : theme;
+
+  const displayImage = reference.image === "/placeholder-light.svg" && currentTheme === "dark"
+    ? "/placeholder-dark.svg"
+    : reference.image;
+
   const handleWhatsApp = () => {
     window.open(
       generateWhatsAppLink(
-        `Halo Forstbiz, saya tertarik dengan desain seperti "${reference.title}" (${reference.category}). Bisa konsultasi lebih lanjut?`,
+        `Halo DevStudio, saya tertarik dengan desain seperti "${reference.title}" (${reference.category}). Bisa konsultasi lebih lanjut?`,
       ),
       "_blank",
     );
@@ -25,10 +35,10 @@ export const ReferenceCard = ({ reference }: ReferenceCardProps) => {
       {/* Image */}
       <div className="relative aspect-video overflow-hidden bg-muted">
         <img
-          src={reference.image}
+          src={displayImage}
           alt={reference.title}
           onError={(e) => {
-            e.currentTarget.src = "/placeholder.svg";
+            e.currentTarget.src = currentTheme === "dark" ? "/placeholder-dark.svg" : "/placeholder-light.svg";
           }}
           className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
