@@ -137,9 +137,13 @@
 
   .glass-card {
     @apply bg-card/95 backdrop-blur-md border border-border;
+    transform: translateZ(0);
+    will-change: transform;
   }
   
   .dark .glass-card {
     @apply bg-white/5 backdrop-blur-md border border-white/10;
+    transform: translateZ(0);
+    will-change: transform;
   }
 }

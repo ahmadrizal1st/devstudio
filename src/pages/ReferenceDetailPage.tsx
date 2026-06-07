@@ -11,7 +11,14 @@ import {
   Tablet,
   Loader2,
   ChevronDown,
+  ZoomIn,
 } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -175,17 +182,39 @@ const ReferenceDetailPage = () => {
         <section className="py-12">
           <div className="container">
             <div className="grid gap-8 lg:grid-cols-2">
-              {/* Image */}
-              <div className="relative aspect-video rounded-xl overflow-hidden bg-muted border shadow-lg">
-                <img
-                  src={displayImage}
-                  alt={reference.title}
-                  onError={(e) => {
-                    e.currentTarget.src = currentTheme === "dark" ? "/placeholder-dark.svg" : "/placeholder-light.svg";
-                  }}
-                  className="h-full w-full object-cover"
-                />
-              </div>
+              {/* Image with Modal */}
+              <Dialog>
+                <DialogTrigger asChild>
+                  <div className="relative aspect-video rounded-xl overflow-hidden bg-muted border shadow-lg cursor-pointer group">
+                    <img
+                      src={displayImage}
+                      alt={reference.title}
+                      onError={(e) => {
+                        e.currentTarget.src = currentTheme === "dark" ? "/placeholder-dark.svg" : "/placeholder-light.svg";
+                      }}
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+                      <span className="text-white font-medium bg-black/50 px-4 py-2 rounded-full backdrop-blur-md flex items-center gap-2">
+                        <ZoomIn className="w-4 h-4" /> Perbesar Gambar
+                      </span>
+                    </div>
+                  </div>
+                </DialogTrigger>
+                <DialogContent className="max-w-[95vw] sm:max-w-[85vw] w-fit h-fit max-h-[90vh] p-1 bg-transparent border-none shadow-none focus:outline-none">
+                  <DialogTitle className="sr-only">Preview Gambar {reference.title}</DialogTitle>
+                  <div className="relative rounded-lg overflow-hidden flex justify-center items-center">
+                    <img
+                      src={displayImage}
+                      alt={reference.title}
+                      onError={(e) => {
+                        e.currentTarget.src = currentTheme === "dark" ? "/placeholder-dark.svg" : "/placeholder-light.svg";
+                      }}
+                      className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl bg-muted"
+                    />
+                  </div>
+                </DialogContent>
+              </Dialog>
 
               {/* Details */}
               <div>

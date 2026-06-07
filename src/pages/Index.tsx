@@ -10,12 +10,15 @@ import { WhyUsSection } from "@/components/sections/WhyUsSection";
 import { CTASection } from "@/components/sections/CTASection";
 import { AddonPackagesSection } from "@/components/sections/AddonPackagesSection";
 
+import { MockupSection } from "@/components/sections/MockupSection";
+
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-1">
         <HeroSection />
+        <MockupSection />
         <ServicesSection />
         <SimplePackagesSection />
         <CategoryPackagesSection />

@@ -3,11 +3,10 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden pt-16 pb-24 lg:pt-32 lg:pb-32">
+    <section className="relative pt-16 pb-48 lg:pt-32 lg:pb-64 z-20 bg-background">
       {/* Background decoration */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute top-0 right-0 -mr-20 -mt-20 h-96 w-96 rounded-full bg-primary/20 blur-[100px]" />
-        <div className="absolute bottom-0 left-0 -ml-20 -mb-20 h-96 w-96 rounded-full bg-purple-600/20 blur-[100px]" />
       </div>
 
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
@@ -119,44 +118,6 @@ export const HeroSection = () => {
               </div>
             </div>
           </div>
-        </div>
-
-
-        {/* 4 Column Features */}
-        <div className="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[
-            {
-              icon: <Zap className="h-6 w-6 text-primary" />,
-              title: "Fast Development",
-              desc: "Boost productivity with powerful and intuitive tools."
-            },
-            {
-              icon: <Users className="h-6 w-6 text-primary" />,
-              title: "Team Collaboration",
-              desc: "Work together seamlessly in real-time."
-            },
-            {
-              icon: <Shield className="h-6 w-6 text-primary" />,
-              title: "Secure & Reliable",
-              desc: "Enterprise-grade security you can trust."
-            },
-            {
-              icon: <Layers className="h-6 w-6 text-primary" />,
-              title: "Scalable Platform",
-              desc: "Designed to grow with your team and projects."
-            }
-          ].map((feature, idx) => (
-            <div key={idx} className="glass-card p-6 rounded-xl transition-transform duration-300 group">
-              <div className="mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                {feature.icon}
-              </div>
-              <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-              <p className="text-sm text-muted-foreground mb-4">{feature.desc}</p>
-              <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80">
-                Learn more <ArrowRight className="ml-1 h-3 w-3" />
-              </a>
-            </div>
-          ))}
         </div>
       </div>
     </section>
