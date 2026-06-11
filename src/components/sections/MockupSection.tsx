@@ -51,9 +51,15 @@ export const MockupSection = () => {
 
         <div className="relative mx-auto max-w-5xl">
           <img 
-            src="/responsive-mockup.png" 
-            alt="Responsive Website Mockup" 
-            className="w-full h-auto"
+            src="/responsive-mockup-light.png" 
+            alt="Responsive Website Mockup Light" 
+            className="w-full h-auto dark:hidden block"
+            loading="lazy"
+          />
+          <img 
+            src="/responsive-mockup-dark.png" 
+            alt="Responsive Website Mockup Dark" 
+            className="w-full h-auto hidden dark:block"
             loading="lazy"
           />
         </div>

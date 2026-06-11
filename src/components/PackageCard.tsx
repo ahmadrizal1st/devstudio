@@ -1,4 +1,5 @@
-import { Check, Star } from "lucide-react";
+import { useState } from "react";
+import { Check, Star, ChevronDown, ChevronUp } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -19,7 +20,9 @@ export const PackageCard = ({
   pkg,
   showAllFeatures = false,
 }: PackageCardProps) => {
-  const displayedFeatures = showAllFeatures
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const displayedFeatures = showAllFeatures || isExpanded
     ? pkg.features
     : pkg.features.slice(0, 6);
   const hasMoreFeatures = !showAllFeatures && pkg.features.length > 6;
@@ -59,9 +62,20 @@ export const PackageCard = ({
               <span className="text-sm text-foreground/90">{feature}</span>
             </li>
           ))}
-          {hasMoreFeatures && (
-            <li className="text-sm text-muted-foreground text-center pt-3 font-medium">
-              +{pkg.features.length - 6} fitur lainnya
+          {hasMoreFeatures && !isExpanded && (
+            <li 
+              className="text-sm text-primary text-center pt-3 font-medium cursor-pointer hover:text-primary/80 flex items-center justify-center gap-1 transition-colors"
+              onClick={() => setIsExpanded(true)}
+            >
+              +{pkg.features.length - 6} fitur lainnya <ChevronDown className="h-4 w-4" />
+            </li>
+          )}
+          {hasMoreFeatures && isExpanded && (
+            <li 
+              className="text-sm text-primary text-center pt-3 font-medium cursor-pointer hover:text-primary/80 flex items-center justify-center gap-1 transition-colors"
+              onClick={() => setIsExpanded(false)}
+            >
+              Sembunyikan fitur <ChevronUp className="h-4 w-4" />
             </li>
           )}
         </ul>
