@@ -379,23 +379,23 @@ export const references: Reference[] = [
     image: "/references/e-learning-platform.png",
     suggestedPackage: "Custom System Pro",
   },
-  // {
-  //   id: "918c5a79-08db-43e4-ac3c-4efaecd291ae",
-  //   title: "Aplikasi Koperasi",
-  //   category: "Custom System",
-  //   categoryId: "custom-system",
-  //   description:
-  //     "Sistem koperasi simpan pinjam dengan manajemen anggota dan pinjaman.",
-  //   features: [
-  //     "Data anggota",
-  //     "Simpanan",
-  //     "Pinjaman",
-  //     "Angsuran",
-  //     "Laporan keuangan",
-  //   ],
-  //   image: "/references/aplikasi-koperasi.png",
-  //   suggestedPackage: "Custom System Business",
-  // },
+  {
+    id: "918c5a79-08db-43e4-ac3c-4efaecd291ae",
+    title: "Aplikasi Koperasi",
+    category: "Custom System",
+    categoryId: "custom-system",
+    description:
+      "Sistem koperasi simpan pinjam dengan manajemen anggota dan pinjaman.",
+    features: [
+      "Data anggota",
+      "Simpanan",
+      "Pinjaman",
+      "Angsuran",
+      "Laporan keuangan",
+    ],
+    image: "/references/aplikasi-koperasi.png",
+    suggestedPackage: "Custom System Business",
+  },
   // Additional references to reach 20+
   {
     id: "583551d5-6dc2-4fe2-a9a9-d643b5fd2f01",
@@ -432,42 +432,40 @@ export const references: Reference[] = [
     suggestedPackage: "Company Profile Business",
     url: "https://chisel-notify-76715910.figma.site/",
   },
-  // {
-  //   id: "59e1af84-417b-4032-9168-2d9b32c94980",
-  //   title: "Klinik Spesialis Jantung",
-  //   category: "Company Profile",
-  //   categoryId: "company-profile",
-  //   description:
-  //     "Website klinik jantung dengan informasi dokter spesialis dan booking konsultasi.",
-  //   features: [
-  //     "Dokter spesialis",
-  //     "Layanan cathlab",
-  //     "Booking konsultasi",
-  //     "Edukasi jantung",
-  //     "Emergency contact",
-  //   ],
-  //   image: "/references/klinik-spesialis-jantung.png",
-  //   suggestedPackage: "Company Profile Pro",
-  //   url: "https://raft-igloo-20407523.figma.site/",
-  // },
-  // {
-  //   id: "802c2eaf-987f-425c-8415-243e97c5d85a",
-  //   title: "Sekolah Internasional Bright",
-  //   category: "Company Profile",
-  //   categoryId: "company-profile",
-  //   description:
-  //     "Website sekolah dengan kurikulum internasional, galeri kegiatan dan pendaftaran online.",
-  //   features: [
-  //     "Kurikulum",
-  //     "Fasilitas sekolah",
-  //     "Galeri kegiatan",
-  //     "Pendaftaran online",
-  //     "Testimoni orang tua",
-  //   ],
-  //   image: "/references/sekolah-internasional-bright.png",
-  //   suggestedPackage: "Company Profile Pro",
-  //   url: "https://care-toggle-12469246.figma.site/",
-  // },
+  {
+    id: "59e1af84-417b-4032-9168-2d9b32c94980",
+    title: "Klinik Spesialis Jantung",
+    category: "Company Profile",
+    categoryId: "company-profile",
+    description:
+      "Website klinik jantung dengan informasi dokter spesialis dan booking konsultasi.",
+    features: [
+      "Dokter spesialis",
+      "Layanan cathlab",
+      "Booking konsultasi",
+      "Edukasi jantung",
+      "Emergency contact",
+    ],
+    image: "/references/klinik-spesialis-jantung.png",
+    suggestedPackage: "Company Profile Pro",
+  },
+  {
+    id: "802c2eaf-987f-425c-8415-243e97c5d85a",
+    title: "Sekolah Internasional Bright",
+    category: "Company Profile",
+    categoryId: "company-profile",
+    description:
+      "Website sekolah dengan kurikulum internasional, galeri kegiatan dan pendaftaran online.",
+    features: [
+      "Kurikulum",
+      "Fasilitas sekolah",
+      "Galeri kegiatan",
+      "Pendaftaran online",
+      "Testimoni orang tua",
+    ],
+    image: "/references/sekolah-internasional-bright.png",
+    suggestedPackage: "Company Profile Pro",
+  },
   {
     id: "efbd595c-67a8-43fe-8d80-277431cb5a5a",
     title: "Perusahaan Real Estate Properti",
@@ -541,24 +539,23 @@ export const references: Reference[] = [
     suggestedPackage: "Tour & Travel Starter",
     url: "https://buzz-blues-35493430.figma.site",
   },
-  // {
-  //   id: "60e9ac06-b99d-426d-bfc0-b663d7553251",
-  //   title: "Wisata Halal Indonesia",
-  //   category: "Tour & Travel",
-  //   categoryId: "tour-travel",
-  //   description:
-  //     "Portal wisata halal dengan destinasi muslim-friendly dan paket umroh.",
-  //   features: [
-  //     "Destinasi halal",
-  //     "Paket umroh",
-  //     "Hotel muslim-friendly",
-  //     "Restoran halal",
-  //     "Wisata edukasi",
-  //   ],
-  //   image: "/references/wisata-halal-indonesia.png",
-  //   suggestedPackage: "Tour & Travel Business",
-  //   url: "https://tamp-candy-80086165.figma.site/",
-  // },
+  {
+    id: "60e9ac06-b99d-426d-bfc0-b663d7553251",
+    title: "Wisata Halal Indonesia",
+    category: "Tour & Travel",
+    categoryId: "tour-travel",
+    description:
+      "Portal wisata halal dengan destinasi muslim-friendly dan paket umroh.",
+    features: [
+      "Destinasi halal",
+      "Paket umroh",
+      "Hotel muslim-friendly",
+      "Restoran halal",
+      "Wisata edukasi",
+    ],
+    image: "/references/wisata-halal-indonesia.png",
+    suggestedPackage: "Tour & Travel Business",
+  },
   {
     id: "e5a980e9-7be2-4874-a97d-4ee2472bc4a4",
     title: "Jakarta City Tour",
@@ -596,42 +593,40 @@ export const references: Reference[] = [
     suggestedPackage: "Website UMKM Business",
     url: "https://heap-zebra-06197808.figma.site/",
   },
-  // {
-  //   id: "18e93eb7-027e-4282-9fdc-b94e141b4299",
-  //   title: "Laundry Kiloan Express",
-  //   category: "Website UMKM",
-  //   categoryId: "umkm-bisnis",
-  //   description:
-  //     "Website laundry dengan layanan antar jemput dan tracking status cucian.",
-  //   features: [
-  //     "Layanan laundry",
-  //     "Harga per kg",
-  //     "Antar jemput",
-  //     "Status cucian",
-  //     "Membership diskon",
-  //   ],
-  //   image: "/references/laundry-kiloan.png",
-  //   suggestedPackage: "Website UMKM Starter",
-  //   url: "https://sting-linen-77558774.figma.site/",
-  // },
-  // {
-  //   id: "1ff917c0-8e01-450e-9564-f36d42ef346d",
-  //   title: "Petshop Hewan Terpercaya",
-  //   category: "Website UMKM",
-  //   categoryId: "umkm-bisnis",
-  //   description:
-  //     "Website petshop dengan katalog makanan hewan dan layanan grooming.",
-  //   features: [
-  //     "Makanan hewan",
-  //     "Aksesoris",
-  //     "Layanan grooming",
-  //     "Pet hotel",
-  //     "Konsultasi dokter",
-  //   ],
-  //   image: "/references/petshop-hewan.png",
-  //   suggestedPackage: "Website UMKM Business",
-  //   url: "https://layer-brush-68471485.figma.site/",
-  // },
+  {
+    id: "18e93eb7-027e-4282-9fdc-b94e141b4299",
+    title: "Laundry Kiloan Express",
+    category: "Website UMKM",
+    categoryId: "umkm-bisnis",
+    description:
+      "Website laundry dengan layanan antar jemput dan tracking status cucian.",
+    features: [
+      "Layanan laundry",
+      "Harga per kg",
+      "Antar jemput",
+      "Status cucian",
+      "Membership diskon",
+    ],
+    image: "/references/laundry-kiloan.png",
+    suggestedPackage: "Website UMKM Starter",
+  },
+  {
+    id: "1ff917c0-8e01-450e-9564-f36d42ef346d",
+    title: "Petshop Hewan Terpercaya",
+    category: "Website UMKM",
+    categoryId: "umkm-bisnis",
+    description:
+      "Website petshop dengan katalog makanan hewan dan layanan grooming.",
+    features: [
+      "Makanan hewan",
+      "Aksesoris",
+      "Layanan grooming",
+      "Pet hotel",
+      "Konsultasi dokter",
+    ],
+    image: "/references/petshop-hewan.png",
+    suggestedPackage: "Website UMKM Business",
+  },
   {
     id: "68ce61dc-ae90-4f79-8991-eb67fb0354f7",
     title: "Jasa Arsitektur Interior",
@@ -650,43 +645,41 @@ export const references: Reference[] = [
     suggestedPackage: "Website UMKM Pro",
     url: "https://create-rerun-84618325.figma.site/",
   },
-  // {
-  //   id: "421cd123-8a97-438a-a6c1-f0fccf961c89",
-  //   title: "Rental Mobil Terpercaya",
-  //   category: "Website UMKM",
-  //   categoryId: "umkm-bisnis",
-  //   description:
-  //     "Website rental mobil dengan pilihan armada dan booking online.",
-  //   features: [
-  //     "Armada mobil",
-  //     "Harga sewa",
-  //     "Booking online",
-  //     "Driver option",
-  //     "Area layanan",
-  //   ],
-  //   image: "/references/rental-mobil.png",
-  //   suggestedPackage: "Website UMKM Business",
-  //   url: "https://table-launch-53972363.figma.site/",
-  // },
-  // // Additional Toko Online
-  // {
-  //   id: "1ca62c60-9b38-48a5-b9b1-e326193cc9b0",
-  //   title: "Tas Kulit Premium",
-  //   category: "Toko Online",
-  //   categoryId: "toko-online",
-  //   description:
-  //     "Toko online tas kulit handmade dengan custom emboss dan material premium.",
-  //   features: [
-  //     "Katalog tas",
-  //     "Custom emboss",
-  //     "Material leather",
-  //     "Garansi produk",
-  //     "Gift wrapping",
-  //   ],
-  //   image: "/references/tas-kulit-premium.png",
-  //   suggestedPackage: "Toko Online Business",
-  //   url: "https://editor-bold-93636798.figma.site/",
-  // },
+  {
+    id: "421cd123-8a97-438a-a6c1-f0fccf961c89",
+    title: "Rental Mobil Terpercaya",
+    category: "Website UMKM",
+    categoryId: "umkm-bisnis",
+    description:
+      "Website rental mobil dengan pilihan armada dan booking online.",
+    features: [
+      "Armada mobil",
+      "Harga sewa",
+      "Booking online",
+      "Driver option",
+      "Area layanan",
+    ],
+    image: "/references/rental-mobil.png",
+    suggestedPackage: "Website UMKM Business",
+  },
+  // Additional Toko Online
+  {
+    id: "1ca62c60-9b38-48a5-b9b1-e326193cc9b0",
+    title: "Tas Kulit Premium",
+    category: "Toko Online",
+    categoryId: "toko-online",
+    description:
+      "Toko online tas kulit handmade dengan custom emboss dan material premium.",
+    features: [
+      "Katalog tas",
+      "Custom emboss",
+      "Material leather",
+      "Garansi produk",
+      "Gift wrapping",
+    ],
+    image: "/references/tas-kulit-premium.png",
+    suggestedPackage: "Toko Online Business",
+  },
   {
     id: "90d8406b-2847-445c-92e3-c66ef97cb042",
     title: "Aksesoris Motor Custom",
@@ -719,7 +712,7 @@ export const references: Reference[] = [
       "Same day delivery",
       "Pot collection",
     ],
-    image: "/placeholder-light.svg",
+    image: "/references/tanaman-hias-indoor.png",
     suggestedPackage: "Toko Online Starter",
   },
   {
@@ -736,7 +729,7 @@ export const references: Reference[] = [
       "Kue basah",
       "Gift box",
     ],
-    image: "/placeholder-light.svg",
+    image: "/references/kue-tradisional-online.png",
     suggestedPackage: "Toko Online Starter",
   },
   {
@@ -753,7 +746,7 @@ export const references: Reference[] = [
       "Release calendar",
       "Wishlist",
     ],
-    image: "/placeholder-light.svg",
+    image: "/references/sepatu-sneakers-original.png",
     suggestedPackage: "Toko Online Pro",
   },
   // Additional Custom System
@@ -771,7 +764,7 @@ export const references: Reference[] = [
       "Laporan harian",
       "Multi outlet",
     ],
-    image: "/placeholder-light.svg",
+    image: "/references/sistem-kasir-restoran.png",
     suggestedPackage: "Custom System Business",
   },
   {
@@ -788,7 +781,7 @@ export const references: Reference[] = [
       "Billing system",
       "Apotek integration",
     ],
-    image: "/placeholder-light.svg",
+    image: "/references/sistem-pendaftaran-pasien.png",
     suggestedPackage: "Custom System Pro",
   },
   {
@@ -804,7 +797,7 @@ export const references: Reference[] = [
       "Pendapatan report",
       "Member vehicle",
     ],
-    image: "/placeholder-light.svg",
+    image: "/references/sistem-parkir-otomatis.png",
     suggestedPackage: "Custom System Business",
   },
   {
@@ -821,7 +814,7 @@ export const references: Reference[] = [
       "Escrow payment",
       "Rating review",
     ],
-    image: "/placeholder-light.svg",
+    image: "/references/platform-freelance-marketplace.png",
     suggestedPackage: "Custom System Pro",
   },
   {
@@ -838,7 +831,7 @@ export const references: Reference[] = [
       "Inventory laundry",
       "Financial report",
     ],
-    image: "/placeholder-light.svg",
+    image: "/references/sistem-laundry-manajemen.png",
     suggestedPackage: "Custom System Business",
   },
   // Additional Landing Page
@@ -856,7 +849,7 @@ export const references: Reference[] = [
       "Listener stats",
       "Contact form",
     ],
-    image: "/placeholder-light.svg",
+    image: "/references/podcast-network-indonesia.png",
     suggestedPackage: "Landing Page Pro",
   },
   {
@@ -873,7 +866,7 @@ export const references: Reference[] = [
       "App download",
       "Testimoni investor",
     ],
-    image: "/placeholder-light.svg",
+    image: "/references/aplikasi-fintech-investasi.png",
     suggestedPackage: "Landing Page Pro",
   },
   {
